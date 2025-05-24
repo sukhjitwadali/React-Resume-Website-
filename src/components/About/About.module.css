@@ -1,0 +1,78 @@
+.about {
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #667eea;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #667eea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  space-y: 1.5rem;
+}
+
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.highlights h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+}

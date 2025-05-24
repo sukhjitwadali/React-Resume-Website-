@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.lightMode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.darkMode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+}

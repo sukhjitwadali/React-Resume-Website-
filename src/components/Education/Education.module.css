@@ -1,0 +1,126 @@
+.education {
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #667eea;
+}
+
+.educationList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.educationItem {
+  background: rgba(102, 126, 234, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.institutionInfo {
+  flex: 1;
+}
+
+.institution {
+  font-size: 1.4rem;
+  margin: 0 0 0.3rem 0;
+  color: #667eea;
+}
+
+.location {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.durationInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.duration {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status {
+  background: #4caf50;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.degreeInfo {
+  margin-bottom: 1.5rem;
+}
+
+.degree {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.achievements h5 {
+  color: #667eea;
+  margin: 0 0 0.5rem 0;
+}
+
+.achievements ul {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.achievements li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.achievements li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .durationInfo {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .institution {
+    font-size: 1.2rem;
+  }
+}
