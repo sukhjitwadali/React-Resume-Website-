@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
       description:
         "AI-driven healthcare platform that revolutionized medical consultations and appointment booking systems.",
       technologies: ["Python", "Django", "AI/ML", "AWS", "MySQL", "REST APIs"],
-      image: "/placeholder.svg?height=200&width=300",
+      image: "./download.png?height=200&width=300",
       achievements: [
         "Supporting 31k+ doctors and 900k+ consultations",
         "Increased booking efficiency by 40%",
@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
       title: "SBIG Insurance App",
       description: "Scalable insurance application handling claims processing and provider network management.",
       technologies: ["Django REST Framework", "Python", "MySQL", "AWS", "API Optimization"],
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://www.sbigeneral.in/home_new/assets-revamp/images/sbig-logo.svg?height=200&width=300",
       achievements: [
         "Built scalable app with 16k+ hospitals & 7k+ garages",
         "Processing 10k+ claims per month",
