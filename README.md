@@ -40,10 +40,10 @@ git clone https://github.com/sukhjitwadali/React-Resume-Website-.git
 cd React-Resume-Website-
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start the development server
-npm start
+pnpm start
 \`\`\`
 
 #### Option 2: Manual Setup
@@ -72,7 +72,7 @@ npm start
 
 4. **Install Dependencies**
    \`\`\`bash
-   npm install
+   pnpm install
    \`\`\`
 
 ##  How to Run the Project
@@ -80,7 +80,7 @@ npm start
 ### Development Mode
 \`\`\`bash
 # Start the development server
-npm start
+pnpm start
 \`\`\`
 - Opens automatically in browser at `http://localhost:3000`
 - Hot reload enabled - changes reflect immediately
@@ -89,19 +89,19 @@ npm start
 ### Production Build
 \`\`\`bash
 # Create optimized production build
-npm run build
+pnpm run build
 
 # Serve the build locally (optional)
-npx serve -s build
+pnpm serve -s build
 \`\`\`
 
 ### Testing
 \`\`\`bash
 # Run tests
-npm test
+pnpm test
 
 # Run tests with coverage
-npm test -- --coverage
+pnpm test -- --coverage
 \`\`\`
 
 
