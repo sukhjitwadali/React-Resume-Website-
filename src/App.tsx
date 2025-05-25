@@ -26,7 +26,7 @@ const App: React.FC = () => {
     phone: "519-731-0613",
     location: "Toronto, ON",
     linkedin: "linkedin.com/in/sukhjit-wadali",
-    github: "github.com/sukhjitsingh",
+    github: "github.com/sukhjitwadali",
   }
 
   const aboutData = {
