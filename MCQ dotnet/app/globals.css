@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+@layer components {
+  .option {
+    @apply transition-all duration-300 hover:bg-gray-100 hover:-translate-y-0.5;
+  }
+
+  .option.selected {
+    @apply bg-blue-100 border-blue-500;
+  }
+
+  .option.correct {
+    @apply bg-green-100 border-green-500;
+  }
+
+  .option.incorrect {
+    @apply bg-red-100 border-red-500;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.8rem;
+  }
+
+  .question-container {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .question-container {
+    padding: 0.6rem;
+  }
+
+  .option {
+    padding: 0.6rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .check-btn,
+  .nav-btn {
+    display: none;
+  }
+}

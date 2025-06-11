@@ -1,0 +1,3845 @@
+ [
+    {
+      "id": "Q001",
+      "question": "When declaring a C# array using the `new int[3]` syntax, what does the number `3` represent?",
+      "options": {
+        "A": "The upper bound of the array.",
+        "B": "The starting index of the array.",
+        "C": "The total number of items the array can hold.",
+        "D": "The default value for each element."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q002",
+      "question": "What is the lower bound (starting index) of a C# array?",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "Varies depending on the array size."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q003",
+      "question": "If you declare an array but do not explicitly fill each index, what value will each item be set to by default?",
+      "options": {
+        "A": "null for all types.",
+        "B": "A random value.",
+        "C": "The default value of the data type (e.g., `false` for `bools`, `0` for `ints`).",
+        "D": "An error will occur."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q004",
+      "question": "What syntax is used to quickly specify initial values when creating an array of a known size?",
+      "options": {
+        "A": "Parentheses `()`.",
+        "B": "Square brackets `[]`.",
+        "C": "Curly brackets `{}`.",
+        "D": "Angle brackets `<>`."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q005",
+      "question": "When using array initialization syntax with curly brackets (e.g., `string[] stringArray = { \"one\", \"two\", \"three\" };`), why do you not need to specify the size of the array?",
+      "options": {
+        "A": "The size is always 3 by default.",
+        "B": "The compiler infers the size from the number of items within the curly brackets.",
+        "C": "Arrays initialized this way have dynamic sizing.",
+        "D": "The `new` keyword automatically handles sizing."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q006",
+      "question": "In array initialization syntax, when can the `new` keyword be considered optional?",
+      "options": {
+        "A": "Always.",
+        "B": "When the size is explicitly declared.",
+        "C": "When the array items are specified within curly brackets (e.g., `bool[] boolArray = { false, false, true };`).",
+        "D": "Never."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q007",
+      "question": "What happens if there is a mismatch between the declared size of an array and the number of initializers (too many or too few) during compilation?",
+      "options": {
+        "A": "The compiler automatically adjusts the size.",
+        "B": "The extra initializers are ignored.",
+        "C": "A compile-time error occurs.",
+        "D": "A runtime exception is thrown."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q008",
+      "question": "Which of the following is true about implicitly typed arrays in C# (e.g., `var a = new[] { 1, 2, 3 };`)?",
+      "options": {
+        "A": "They can hold elements of different data types.",
+        "B": "They require explicit type declaration in the `new` keyword.",
+        "C": "All elements must be of the same type.",
+        "D": "They cannot be initialized with values."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q009",
+      "question": "An array of `System.Object` can hold elements of what type(s)?",
+      "options": {
+        "A": "Only other `System.Object` instances.",
+        "B": "Only value types.",
+        "C": "Only reference types.",
+        "D": "Any type of item, be it a value type or a reference type."
+      },
+      "answer": "D",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q010",
+      "question": "What is the syntax for declaring a rectangular multidimensional array in C#?",
+      "options": {
+        "A": "`int[][]`",
+        "B": "`int[,]`",
+        "C": "`int[][][]`",
+        "D": "`int[,][]`"
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q011",
+      "question": "Which type of multidimensional array is more flexible, allowing each inner array to have a different number of dimensions or items?",
+      "options": {
+        "A": "Rectangular arrays.",
+        "B": "Jagged arrays.",
+        "C": "All multidimensional arrays are fixed in size.",
+        "D": "Only arrays of `System.Object`."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q012",
+      "question": "When defining a jagged array, such as `int[][] myJaggedArray = new int[5][];`, what does the first set of square brackets (`[5]`) specify?",
+      "options": {
+        "A": "The number of items in the first inner array.",
+        "B": "The total number of elements in the entire array.",
+        "C": "The number of inner arrays contained in the outer array.",
+        "D": "The number of dimensions in the inner arrays."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q013",
+      "question": "Which `System.Array` static method can be used to set a range of elements in an array to their default values?",
+      "options": {
+        "A": "`Fill()`",
+        "B": "`Clear()`",
+        "C": "`Reset()`",
+        "D": "`Remove()`"
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q014",
+      "question": "What does the `Length` property of the `System.Array` class return?",
+      "options": {
+        "A": "The number of dimensions.",
+        "B": "The total number of elements in all dimensions.",
+        "C": "The size of the first dimension.",
+        "D": "The number of bytes the array occupies."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q015",
+      "question": "Which C# operator, new in C# 8, is used with `System.Index` to count from the end of an array or collection?",
+      "options": {
+        "A": "`~`",
+        "B": "`&`",
+        "C": "`^`",
+        "D": "`*`"
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q016",
+      "question": "What does the `..` operator, used with `System.Range`, define in C# 8 and later?",
+      "options": {
+        "A": "A single element.",
+        "B": "A starting point.",
+        "C": "A sequence of elements from a collection.",
+        "D": "An ending point."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q017",
+      "question": "What is the primary purpose of expression-bodied members (`=>`) in C#?",
+      "options": {
+        "A": "To define asynchronous methods.",
+        "B": "To create anonymous methods.",
+        "C": "To provide a concise syntax for simple methods, properties, or constructors.",
+        "D": "To enable functional programming paradigms."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q018",
+      "question": "Which C# 7 feature allows you to define methods within the scope of other methods, making them accessible only to the containing method?",
+      "options": {
+        "A": "Extension methods.",
+        "B": "Partial methods.",
+        "C": "Local functions.",
+        "D": "Anonymous methods."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q019",
+      "question": "What is the primary difference between `ref` and `out` parameters?",
+      "options": {
+        "A": "`ref` parameters must be initialized before being passed, while `out` parameters must be assigned within the method.",
+        "B": "`out` parameters must be initialized before being passed, while `ref` parameters must be assigned within the method.",
+        "C": "`ref` parameters pass by value, while `out` parameters pass by reference.",
+        "D": "`out` parameters are read-only, while `ref` parameters are read-write."
+      },
+      "answer": "A",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q020",
+      "question": "Which keyword is used for parameters that are read-only references to a value, preventing the method from modifying the original variable?",
+      "options": {
+        "A": "`ref`",
+        "B": "`out`",
+        "C": "`in`",
+        "D": "`params`"
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q021",
+      "question": "What is the purpose of the `params` keyword when used with method parameters?",
+      "options": {
+        "A": "It makes the parameter optional.",
+        "B": "It allows a method to accept a variable number of arguments of a specific type.",
+        "C": "It marks the parameter as an output parameter.",
+        "D": "It forces the parameter to be passed by reference."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q022",
+      "question": "In C# 7, how can you declare an `out` parameter directly within the argument list of a method call?",
+      "options": {
+        "A": "You cannot; `out` parameters must be declared beforehand.",
+        "B": "By using the `var` keyword (e.g., `Method(out var result);`).",
+        "C": "By using the `new` keyword.",
+        "D": "By specifying the type explicitly (e.g., `Method(out int result);`)."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q023",
+      "question": "What is a 'discard' (`_`) used for with `out` parameters in C#?",
+      "options": {
+        "A": "To indicate an error in the parameter assignment.",
+        "B": "To ignore a return value from a method.",
+        "C": "To indicate that an `out` parameter's value is not needed.",
+        "D": "To explicitly set the `out` parameter to its default value."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q024",
+      "question": "When defining optional parameters in a method, what is a key requirement for the default value provided?",
+      "options": {
+        "A": "It must be a runtime constant.",
+        "B": "It must be retrieved from a database.",
+        "C": "It must be a compile-time constant.",
+        "D": "It can be any expression."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q025",
+      "question": "Which of the following is NOT a valid way to overload a method in C#?",
+      "options": {
+        "A": "Changing the number of parameters.",
+        "B": "Changing the data type of parameters.",
+        "C": "Changing the order of parameters.",
+        "D": "Changing only the return type of the method."
+      },
+      "answer": "D",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q026",
+      "question": "What is the default underlying storage type for a C# `enum` if not explicitly specified?",
+      "options": {
+        "A": "`byte`",
+        "B": "`short`",
+        "C": "`int`",
+        "D": "`long`"
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q027",
+      "question": "Which attribute can be applied to an `enum` to indicate that its members can be combined using bitwise operations?",
+      "options": {
+        "A": "`[Serializable]`",
+        "B": "`[Flags]`",
+        "C": "`[Combinable]`",
+        "D": "`[Indexed]`"
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q028",
+      "question": "What is a key characteristic of structs in C# regarding inheritance?",
+      "options": {
+        "A": "They can inherit from other classes.",
+        "B": "They can inherit from other structs.",
+        "C": "They can implement interfaces but cannot inherit from classes or other structs.",
+        "D": "They can be abstract."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q029",
+      "question": "When does a default constructor for a struct automatically initialize its fields to their default values (e.g., 0 for integers, `null` for reference types)?",
+      "options": {
+        "A": "Always.",
+        "B": "Only when explicitly called.",
+        "C": "Automatically, even if you define a custom constructor in C# 10 or later.",
+        "D": "Only if you don't define any custom constructors."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q030",
+      "question": "What is the primary benefit of declaring a `struct` as `readonly`?",
+      "options": {
+        "A": "It makes the struct mutable only within its own methods.",
+        "B": "It allows the struct to be stored on the heap for better performance.",
+        "C": "It ensures that all fields and properties of the struct are immutable after initialization.",
+        "D": "It prevents the struct from being passed as an `out` parameter."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q031",
+      "question": "What is a limitation of `ref struct` types in C#?",
+      "options": {
+        "A": "They can implement any interface.",
+        "B": "They can be used as generic type arguments.",
+        "C": "They must be stored on the heap.",
+        "D": "They cannot be boxed or stored on the heap."
+      },
+      "answer": "D",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q032",
+      "question": "Where are value types typically allocated in memory?",
+      "options": {
+        "A": "On the heap.",
+        "B": "On the stack.",
+        "C": "In the static data segment.",
+        "D": "In the thread local storage."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q033",
+      "question": "What is a C# `tuple` primarily used for?",
+      "options": {
+        "A": "Defining a complex object hierarchy.",
+        "B": "Returning multiple values from a method without defining a custom class or struct.",
+        "C": "Storing a collection of objects that can be modified.",
+        "D": "Implementing a linked list."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q034",
+      "question": "When defining a C# `tuple` with named elements (e.g., `(string Name, int Age)`), what is the benefit of naming the elements?",
+      "options": {
+        "A": "It makes the tuple immutable.",
+        "B": "It allows access to elements using meaningful names instead of `Item1`, `Item2`, etc.",
+        "C": "It forces the tuple to be stored on the heap.",
+        "D": "It enables automatic type conversion."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q035",
+      "question": "What happens if you try to assign a value to a C# `tuple` element that doesn't exist?",
+      "options": {
+        "A": "A new element is automatically added.",
+        "B": "The value is silently ignored.",
+        "C": "A compile-time error occurs.",
+        "D": "A runtime exception is thrown."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q036",
+      "question": "In C# 7, how can you 'deconstruct' a tuple into individual variables?",
+      "options": {
+        "A": "Using a `for` loop.",
+        "B": "By assigning the tuple to a new set of parenthesized variables (e.g., `(int x, int y) = myTuple;`).",
+        "C": "By calling a `.Deconstruct()` method on the tuple.",
+        "D": "Tuples cannot be deconstructed."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q037",
+      "question": "What is 'positional pattern matching' in C# 8, in the context of deconstructing tuples?",
+      "options": {
+        "A": "Matching based on the names of tuple elements.",
+        "B": "Matching based on the order of elements in a tuple, often combined with `when` clauses in switch expressions.",
+        "C": "Matching based on the data type of tuple elements.",
+        "D": "Matching based on the memory address of the tuple."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q038",
+      "question": "When using `var` in a tuple deconstruction (e.g., `var (x, y) = p;`), what is the primary benefit?",
+      "options": {
+        "A": "It makes the variables global.",
+        "B": "It infers the types of the deconstructed variables, reducing verbosity.",
+        "C": "It forces the variables to be read-only.",
+        "D": "It allows the deconstruction to occur at runtime only."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q039",
+      "question": "Which of the following is true about C# `record` types (new in C# 9.0)?",
+      "options": {
+        "A": "They are value types by default.",
+        "B": "They are immutable by default.",
+        "C": "They are reference types that provide value-based equality.",
+        "D": "They cannot have constructors."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q040",
+      "question": "What is `value-based equality` for `record` types?",
+      "options": {
+        "A": "Two records are equal if they refer to the same object in memory.",
+        "B": "Two records are equal if all their public properties have the same values.",
+        "C": "Two records are equal if their hash codes are identical.",
+        "D": "Value-based equality is not supported for record types."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q041",
+      "question": "What is the purpose of the `with` expression in C# for `record` types?",
+      "options": {
+        "A": "To modify an existing record in place.",
+        "B": "To create a new record instance with some modified properties, leaving the original unchanged.",
+        "C": "To create a deep copy of a record.",
+        "D": "To define an abstract record."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q042",
+      "question": "Can `record` types inherit from other classes or records?",
+      "options": {
+        "A": "No, inheritance is not supported for records.",
+        "B": "Yes, but only from `System.Object`.",
+        "C": "Yes, records support inheritance, including abstract records.",
+        "D": "Only if they are defined as `struct records`."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q043",
+      "question": "What is a `record struct` (new in C# 10)?",
+      "options": {
+        "A": "A reference type with value-based equality.",
+        "B": "A value type that provides value-based equality and immutability benefits.",
+        "C": "A class that behaves like a struct.",
+        "D": "A struct that can inherit from other structs."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q044",
+      "question": "How can you make a `record struct` immutable?",
+      "options": {
+        "A": "By using the `new` keyword.",
+        "B": "By explicitly declaring it as a `class record`.",
+        "C": "By adding the `readonly` keyword to its definition.",
+        "D": "Record structs are always mutable."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q045",
+      "question": "What is a `default constructor` for a `struct`?",
+      "options": {
+        "A": "A constructor that requires all fields to be initialized explicitly.",
+        "B": "A parameterless constructor that initializes all fields to their default values.",
+        "C": "A constructor that can only be called from other constructors.",
+        "D": "A constructor that is only available for `readonly struct`."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q046",
+      "question": "Can a `struct` define its own parameterless constructor in C# 10?",
+      "options": {
+        "A": "No, this is only allowed for classes.",
+        "B": "Yes, this feature was introduced in C# 10.",
+        "C": "Only if the struct is `readonly`.",
+        "D": "Only if the struct has no fields."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q047",
+      "question": "What is the purpose of the `this()` call in a struct constructor (e.g., `public MyStruct(int x) : this()`)?",
+      "options": {
+        "A": "To call the base class constructor.",
+        "B": "To explicitly call the parameterless default constructor of the struct.",
+        "C": "To create a new instance of the struct.",
+        "D": "To enforce immutability."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q048",
+      "question": "Which of the following is true about `init` only properties (new in C# 9.0)?",
+      "options": {
+        "A": "They can be set at any time after object creation.",
+        "B": "They can only be set during object initialization (constructor or object initializer).",
+        "C": "They are read-write after initialization.",
+        "D": "They can only be set by reflection."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q049",
+      "question": "What mechanism do `record` types (classes and structs) provide by default for a more readable string representation?",
+      "options": {
+        "A": "They override `GetHashCode()`.",
+        "B": "They override `Equals()`.",
+        "C": "They override `ToString()` to display property names and values.",
+        "D": "They generate an XML representation."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q050",
+      "question": "What is the primary difference in behavior between `record` (class) and `record struct` regarding memory allocation?",
+      "options": {
+        "A": "Both are always allocated on the heap.",
+        "B": "Both are always allocated on the stack.",
+        "C": "`record` (class) is a reference type (heap), `record struct` is a value type (stack/inline).",
+        "D": "`record` (class) is a value type, `record struct` is a reference type."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q051",
+      "question": "What is the primary purpose of `Visual Studio Code` and `Visual Studio Community Edition` mentioned in the document?",
+      "options": {
+        "A": "Operating Systems.",
+        "B": "Command-line tools.",
+        "C": "Microsoft's flagship IDEs (Integrated Development Environments).",
+        "D": "Cloud computing platforms."
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q052",
+      "question": "What needs to be installed to start developing applications with C# 10 and .NET 6?",
+      "options": {
+        "A": "Only the .NET 6 Runtime.",
+        "B": "Only Visual Studio.",
+        "C": "The .NET 6 SDK (which also installs the .NET 6 runtime).",
+        "D": "A specific C# compiler."
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q053",
+      "question": "Where can you find all the installs for .NET and .NET Core?",
+      "options": {
+        "A": "Microsoft Store.",
+        "B": "GitHub.",
+        "C": "www.dot.net.",
+        "D": "Nuget.org."
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q054",
+      "question": "What does the `dotnet build` command do?",
+      "options": {
+        "A": "Only restores Nuget packages.",
+        "B": "Restores all Nuget packages and builds all projects in the solution.",
+        "C": "Only compiles a single project.",
+        "D": "Runs the application without debugging."
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q055",
+      "question": "When `dotnet restore` and `dotnet build` are executed in a directory containing a solution file, what is the scope of their action?",
+      "options": {
+        "A": "Only the currently active project.",
+        "B": "All projects in the solution.",
+        "C": "Only projects that have changed since the last build.",
+        "D": "Only the project specified as a command-line argument."
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q056",
+      "question": "How can you run your project without debugging using the .NET CLI?",
+      "options": {
+        "A": "`dotnet debug`",
+        "B": "`dotnet run`",
+        "C": "`dotnet execute`",
+        "D": "`dotnet start`"
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q057",
+      "question": "Where can you view the official Microsoft documentation for C# and .NET Core?",
+      "options": {
+        "A": "Google.com",
+        "B": "StackOverflow.com",
+        "C": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+        "D": "Wikipedia.org"
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q058",
+      "question": "According to the document, what are the three primary factors influencing tool selection for building .NET Core applications?",
+      "options": {
+        "A": "Cost, operating system, and target computing platforms.",
+        "B": "Developer's experience, internet speed, and hardware.",
+        "C": "Programming language, database type, and project size.",
+        "D": "Team size, client requirements, and deployment environment."
+      },
+      "answer": "A",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q059",
+      "question": "What does `SDK` stand for in the context of .NET SDK?",
+      "options": {
+        "A": "Software Development Kit.",
+        "B": "Standard Development Kit.",
+        "C": "System Deployment Kit.",
+        "D": "Server Development Kit."
+      },
+      "answer": "A",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q060",
+      "question": "What is the purpose of the `.NET 6 runtime`?",
+      "options": {
+        "A": "To develop applications.",
+        "B": "To manage source code.",
+        "C": "To execute compiled .NET applications.",
+        "D": "To build project files."
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q061",
+      "question": "What is the role of the `Main()` method in a C# executable program?",
+      "options": {
+        "A": "It defines the program's main data structure.",
+        "B": "It is the program's entry point.",
+        "C": "It handles all user interface interactions.",
+        "D": "It declares global variables."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q062",
+      "question": "What new C# 9.0 feature is mentioned as an alternative to the traditional `Main()` method for program entry?",
+      "options": {
+        "A": "Anonymous methods.",
+        "B": "Local functions.",
+        "C": "Top-level statements.",
+        "D": "Extension methods."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q063",
+      "question": "Which two fundamental C# data types are examined in detail in the context of string manipulation?",
+      "options": {
+        "A": "`System.Int32` and `System.Decimal`.",
+        "B": "`System.Boolean` and `System.Char`.",
+        "C": "`System.String` and `System.Text.StringBuilder` classes.",
+        "D": "`System.DateTime` and `System.TimeSpan`."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q064",
+      "question": "What are `narrowing operations` in the context of data type conversion?",
+      "options": {
+        "A": "Converting a smaller type to a larger type.",
+        "B": "Converting a larger type to a smaller type, potentially losing data.",
+        "C": "Converting a numeric type to a string.",
+        "D": "Converting a string to a numeric type."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q065",
+      "question": "What is the purpose of the `checked` and `unchecked` keywords?",
+      "options": {
+        "A": "To control compiler optimizations.",
+        "B": "To define security permissions.",
+        "C": "To control overflow checking for integral-type arithmetic operations.",
+        "D": "To validate user input."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q066",
+      "question": "What does the C# `var` keyword allow you to do?",
+      "options": {
+        "A": "Explicitly define a local variable's type.",
+        "B": "Implicitly define a local variable's type based on its initialization expression.",
+        "C": "Declare a global variable.",
+        "D": "Create a read-only variable."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q067",
+      "question": "What is the purpose of `LINQ` technology mentioned in the document?",
+      "options": {
+        "A": "Managing network connections.",
+        "B": "Language Integrated Query for data manipulation.",
+        "C": "Building graphical user interfaces.",
+        "D": "Handling file I/O operations."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q068",
+      "question": "C# demands that all program logic be contained within what?",
+      "options": {
+        "A": "Global functions.",
+        "B": "External libraries.",
+        "C": "Classes and methods.",
+        "D": "Configuration files."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q069",
+      "question": "What happens if a `switch` statement in C# 7 has a `case int i:` that precedes more specific `case int i when i == 0:`?",
+      "options": {
+        "A": "The compiler will automatically reorder the cases.",
+        "B": "The second and third cases will execute first.",
+        "C": "The `case int i:` will match every integer, and the following cases will never execute (and fail to compile).",
+        "D": "A runtime exception will occur."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q070",
+      "question": "What new feature in C# 8 allows the assignment of a variable in a concise statement within `switch` constructs?",
+      "options": {
+        "A": "`switch` statements.",
+        "B": "`if-else if` statements.",
+        "C": "`switch` expressions.",
+        "D": "Ternary operator."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q071",
+      "question": "What was a small glitch with pattern matching when using generic types, resolved with C# 7.1?",
+      "options": {
+        "A": "Incorrect type inference.",
+        "B": "Issues with string pattern matching.",
+        "C": "Problems with using generic types in pattern matching.",
+        "D": "Performance degradation."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q072",
+      "question": "Are pattern matching improvements in C# 9.0 available for use in `switch` statements?",
+      "options": {
+        "A": "No, only in `switch` expressions.",
+        "B": "Yes, they are available for both `switch` statements and `switch` expressions.",
+        "C": "Only for specific data types.",
+        "D": "Only when explicit casting is used."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q073",
+      "question": "What is the primary role of a `class` in object-oriented programming?",
+      "options": {
+        "A": "To store simple data values.",
+        "B": "To define a blueprint for creating objects, encapsulating state and behavior.",
+        "C": "To execute command-line instructions.",
+        "D": "To handle file system operations."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q074",
+      "question": "When member variables of a class are declared using the `public` access modifier, what does this imply about their accessibility?",
+      "options": {
+        "A": "They are only accessible within the class itself.",
+        "B": "They are accessible only by derived classes.",
+        "C": "They are directly accessible once an object of this type has been created.",
+        "D": "They can only be accessed via properties."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q075",
+      "question": "According to the document, why should field data of a class seldom be defined as `public`?",
+      "options": {
+        "A": "It makes the code harder to read.",
+        "B": "It prevents efficient memory allocation.",
+        "C": "To preserve the integrity of state data; it's better to define data as `private` (or `protected`) and allow controlled access via properties.",
+        "D": "Public fields are deprecated in C#."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q076",
+      "question": "What is the term used to describe an instance of a given class type created using the `new` keyword?",
+      "options": {
+        "A": "Template.",
+        "B": "Blueprint.",
+        "C": "Object.",
+        "D": "Schema."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q077",
+      "question": "If a `Car` class defines `petName` and `currSpeed` as member variables, what do these variables represent?",
+      "options": {
+        "A": "The functionality of the `Car`.",
+        "B": "The state of the `Car`.",
+        "C": "External dependencies.",
+        "D": "Static members."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q078",
+      "question": "What is the purpose of `PrintState()` and `SpeedUp()` methods for the `Car` class?",
+      "options": {
+        "A": "To define the state of the `Car`.",
+        "B": "To define the functionality (behavior) of the `Car`.",
+        "C": "To initialize the `Car` object.",
+        "D": "To destroy the `Car` object."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q079",
+      "question": "What is `encapsulation` in OOP, as discussed in the chapter?",
+      "options": {
+        "A": "The ability of objects to take on many forms.",
+        "B": "The hiding of internal state and requiring all interaction to be through an object's API.",
+        "C": "The ability to define common functionality in a parent class.",
+        "D": "The mechanism for managing memory."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q080",
+      "question": "What is a `constructor` in C#?",
+      "options": {
+        "A": "A method that returns a value based on input.",
+        "B": "A special member that is automatically invoked when an object is created, used to initialize the object's state.",
+        "C": "A property that holds data.",
+        "D": "A static method used for utility functions."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q081",
+      "question": "If you do not define a constructor for a class, what will the C# compiler do?",
+      "options": {
+        "A": "It will throw a compile-time error.",
+        "B": "It will generate a private default constructor.",
+        "C": "It will generate a public default constructor that takes no arguments.",
+        "D": "The class cannot be instantiated."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q082",
+      "question": "What is the purpose of `this` keyword in a constructor when calling another constructor in the same class (e.g., `: this(initialSpeed, initialName)`)?",
+      "options": {
+        "A": "To call the base class constructor.",
+        "B": "To create a new instance of the current class.",
+        "C": "To chain constructors, allowing a constructor to call another constructor in the same class.",
+        "D": "To refer to the current object's private fields."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q083",
+      "question": "What is an `object initializer` in C#?",
+      "options": {
+        "A": "A special type of constructor.",
+        "B": "A syntax that allows you to assign values to public fields or properties of an object at the time of its creation.",
+        "C": "A method that initializes an object after it has been created.",
+        "D": "A way to declare static variables."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q084",
+      "question": "What is the key difference between using object initializers and constructors for object creation and initialization?",
+      "options": {
+        "A": "Object initializers are always faster.",
+        "B": "Constructors are used for complex initialization logic, while object initializers are for setting public members after a constructor runs.",
+        "C": "Object initializers can set private fields directly.",
+        "D": "Constructors cannot take arguments."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q085",
+      "question": "What is the primary reason to use `properties` instead of `public fields` in C#?",
+      "options": {
+        "A": "Properties are faster to access.",
+        "B": "Properties allow for validation logic and controlled access to underlying private fields.",
+        "C": "Properties are automatically serialized.",
+        "D": "Properties consume less memory."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q086",
+      "question": "What is an `auto-implemented property` (or auto-property) in C#?",
+      "options": {
+        "A": "A property that is automatically generated by the compiler based on a database schema.",
+        "B": "A concise syntax for properties where the compiler automatically creates a private backing field.",
+        "C": "A property that can only be read, not written to.",
+        "D": "A property that is shared across all instances of a class."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q087",
+      "question": "What is a `read-only property`?",
+      "options": {
+        "A": "A property with only a `set` accessor.",
+        "B": "A property with only a `get` accessor, its value typically set in the constructor or by a private field.",
+        "C": "A property whose value can be changed multiple times.",
+        "D": "A property that can only be accessed by derived classes."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q088",
+      "question": "What is a `write-only property`?",
+      "options": {
+        "A": "A property with only a `get` accessor.",
+        "B": "A property with only a `set` accessor, allowing external code to write a value but not read it directly.",
+        "C": "A property that can only be written to by derived classes.",
+        "D": "A property that is initialized at design time."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q089",
+      "question": "What are `init-only properties` (new in C# 9.0) primarily used for?",
+      "options": {
+        "A": "To allow properties to be set at any time.",
+        "B": "To ensure that properties can only be set during object initialization (constructor or object initializer) and then become immutable.",
+        "C": "To create properties that can only be set by reflection.",
+        "D": "To define properties for static classes."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q090",
+      "question": "What is a `constant` in C#?",
+      "options": {
+        "A": "A field whose value can be changed at runtime.",
+        "B": "A field whose value is fixed at compile time and cannot be changed.",
+        "C": "A static property that holds a dynamic value.",
+        "D": "A variable whose scope is limited to a single method."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q091",
+      "question": "What is the primary difference between a `constant` (`const`) and a `read-only field` (`readonly`)?",
+      "options": {
+        "A": "`const` fields are compile-time constants, `readonly` fields are runtime constants (can be initialized in constructor).",
+        "B": "`readonly` fields are compile-time constants, `const` fields are runtime constants.",
+        "C": "`const` fields can be changed, `readonly` fields cannot.",
+        "D": "There is no difference; the keywords are interchangeable."
+      },
+      "answer": "A",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q092",
+      "question": "What is the purpose of `static` members in a class?",
+      "options": {
+        "A": "They belong to individual objects of the class.",
+        "B": "They belong to the class itself, not to any specific instance, and are shared among all instances.",
+        "C": "They are only accessible from outside the class.",
+        "D": "They can be modified by any method, regardless of access modifiers."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q093",
+      "question": "When can a `static constructor` be defined in a class?",
+      "options": {
+        "A": "Only after the default constructor.",
+        "B": "Only if there are no instance constructors.",
+        "C": "A class can have at most one static constructor, which is parameterless and access-modifier free.",
+        "D": "It can be overloaded like other constructors."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q094",
+      "question": "What are `named arguments` in C#?",
+      "options": {
+        "A": "Arguments passed to a method using their names instead of their positional order.",
+        "B": "Arguments that must be defined as constants.",
+        "C": "Arguments that are always optional.",
+        "D": "Arguments that are passed by reference."
+      },
+      "answer": "A",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q095",
+      "question": "What is the primary purpose of the `record` type in C# 9.0?",
+      "options": {
+        "A": "To provide mutable data structures with complex behavior.",
+        "B": "To create data-centric types with built-in immutability, value-based equality, and simplified `ToString()`.",
+        "C": "To replace interfaces and abstract classes.",
+        "D": "To define low-level memory structures."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q096",
+      "question": "What is the `ToString()` method's behavior for `record` types by default?",
+      "options": {
+        "A": "It returns the fully qualified type name.",
+        "B": "It provides a formatted string representation of the record's public properties and their values.",
+        "C": "It throws an exception if not explicitly overridden.",
+        "D": "It returns a hexadecimal representation of the object's memory address."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q097",
+      "question": "How can you create a mutable `record struct`?",
+      "options": {
+        "A": "By adding the `mutable` keyword.",
+        "B": "By omitting the `readonly` keyword and using `get; set;` properties instead of `get; init;`.",
+        "C": "Record structs are always immutable.",
+        "D": "By implementing a specific interface."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q098",
+      "question": "What is the main advantage of using `record struct` over a regular `struct` when it comes to value-based equality?",
+      "options": {
+        "A": "Regular structs automatically provide value-based equality.",
+        "B": "Record structs automatically implement value-based equality, reducing boilerplate code.",
+        "C": "Record structs do not support value-based equality.",
+        "D": "Value-based equality is only for reference types."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q099",
+      "question": "What is the fundamental concept of `inheritance` in OOP?",
+      "options": {
+        "A": "Bundling data and methods into a single unit.",
+        "B": "The ability of one class (derived class) to acquire the properties and methods of another class (base class), representing an 'is-a' relationship.",
+        "C": "The ability of an object to take on many forms.",
+        "D": "The process of hiding implementation details."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q100",
+      "question": "What are the two flavors of code reuse mentioned in the context of inheritance?",
+      "options": {
+        "A": "Copy-pasting and refactoring.",
+        "B": "Inheritance ('is-a' relationship) and containment/delegation ('has-a' relationship).",
+        "C": "Static methods and extension methods.",
+        "D": "Value types and reference types."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q101",
+      "question": "Which token is used to establish the parent class of a given type in C#?",
+      "options": {
+        "A": "`!`",
+        "B": "`.`",
+        "C": ":",
+        "D": "="
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q102",
+      "question": "In an inheritance hierarchy, what is the role of a `parent type`?",
+      "options": {
+        "A": "It can only define private members.",
+        "B": "It defines common functionality that can be leveraged and possibly altered by child classes.",
+        "C": "It is always abstract.",
+        "D": "It can only be instantiated directly."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q103",
+      "question": "What is `polymorphism` in OOP?",
+      "options": {
+        "A": "The ability of a class to have multiple constructors.",
+        "B": "The ability of an object to take on many forms, allowing objects of different classes to be treated as objects of a common base class.",
+        "C": "The hiding of implementation details.",
+        "D": "The reuse of code through composition."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q104",
+      "question": "Which keyword is used by derived types to override `virtual` or `abstract` members defined in a parent class?",
+      "options": {
+        "A": "`new`",
+        "B": "`base`",
+        "C": "`override`",
+        "D": "`implement`"
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q105",
+      "question": "What is the `cosmic parent class` in the .NET base class libraries, from which all other types ultimately derive?",
+      "options": {
+        "A": "`System.Class`",
+        "B": "`System.Type`",
+        "C": "`System.Object`",
+        "D": "`System.Base`"
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q106",
+      "question": "What happens if a derived class hides an inherited member using the `new` keyword?",
+      "options": {
+        "A": "It creates an error.",
+        "B": "The base class member is still accessible if the object is referenced as the base type.",
+        "C": "The base class member is completely replaced and inaccessible.",
+        "D": "It leads to a runtime exception."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q107",
+      "question": "What is `explicit casting` primarily used for in inheritance hierarchies?",
+      "options": {
+        "A": "Converting a base type to a derived type.",
+        "B": "Converting a derived type to a base type.",
+        "C": "Converting a value type to a reference type.",
+        "D": "Converting a string to an integer."
+      },
+      "answer": "A",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q108",
+      "question": "Which of the following methods of `System.Object` is used to determine if two object instances point to the exact same object in memory?",
+      "options": {
+        "A": "`Equals()`",
+        "B": "`GetHashCode()`",
+        "C": "`ReferenceEquals()`",
+        "D": "`ToString()`"
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q109",
+      "question": "Which method of `System.Object` is typically overridden to provide a custom string representation of an object?",
+      "options": {
+        "A": "`GetType()`",
+        "B": "`GetHashCode()`",
+        "C": "`Equals()`",
+        "D": "`ToString()`"
+      },
+      "answer": "D",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q110",
+      "question": "When overriding `Equals()` in a custom class, what other method should you also override to ensure correct behavior, especially for hash-based collections?",
+      "options": {
+        "A": "`GetType()`",
+        "B": "`GetHashCode()`",
+        "C": "`ReferenceEquals()`",
+        "D": "`Clone()`"
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q111",
+      "question": "What does `object.Equals(p3, p4)` return if `p3` and `p4` are two separate `Person` objects with identical state (same name, age)?",
+      "options": {
+        "A": "`True`",
+        "B": "`False`",
+        "C": "An error.",
+        "D": "A hash code."
+      },
+      "answer": "A",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q112",
+      "question": "What does `object.ReferenceEquals(p3, p4)` return if `p3` and `p4` are two separate `Person` objects (even if they have identical state)?",
+      "options": {
+        "A": "`True`",
+        "B": "`False`",
+        "C": "An error.",
+        "D": "A hash code."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q113",
+      "question": "What is the purpose of the `is` operator in C#?",
+      "options": {
+        "A": "To check if two objects are equal.",
+        "B": "To check if an object is compatible with a given type.",
+        "C": "To perform type conversion.",
+        "D": "To define an inheritance relationship."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q114",
+      "question": "What is the purpose of the `as` operator in C#?",
+      "options": {
+        "A": "To perform an explicit cast, throwing an exception on failure.",
+        "B": "To perform a safe type conversion, returning `null` if the conversion fails instead of throwing an exception.",
+        "C": "To define a type alias.",
+        "D": "To check for type compatibility without converting."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q115",
+      "question": "What is a `virtual` member in a base class?",
+      "options": {
+        "A": "A member that cannot be overridden by derived classes.",
+        "B": "A member that must be overridden by derived classes.",
+        "C": "A member that can be overridden by derived classes, allowing polymorphic behavior.",
+        "D": "A member that is only accessible within the base class."
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q116",
+      "question": "What is an `abstract` member in a base class?",
+      "options": {
+        "A": "A member with a default implementation that can be overridden.",
+        "B": "A member that provides a full implementation but is not accessible.",
+        "C": "A member declared without an implementation, forcing derived non-abstract classes to provide one.",
+        "D": "A member that can only be called statically."
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q117",
+      "question": "Can an `abstract class` be instantiated directly?",
+      "options": {
+        "A": "Yes, but only if all its members are implemented.",
+        "B": "No, abstract classes cannot be instantiated directly; they serve as base classes for other classes.",
+        "C": "Only if it has a default constructor.",
+        "D": "Only if it contains no abstract members."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q118",
+      "question": "What is the purpose of the `sealed` keyword when applied to a class?",
+      "options": {
+        "A": "It prevents the class from being instantiated.",
+        "B": "It prevents other classes from inheriting from it.",
+        "C": "It makes all members of the class static.",
+        "D": "It ensures the class is thread-safe."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q119",
+      "question": "What is the purpose of the `sealed` keyword when applied to an overridden member?",
+      "options": {
+        "A": "It allows further overriding by derived classes.",
+        "B": "It prevents further overriding of that specific member in derived classes.",
+        "C": "It makes the member abstract.",
+        "D": "It makes the member static."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q120",
+      "question": "Which of the following is NOT a pillar of Object-Oriented Programming (OOP) mentioned in the document?",
+      "options": {
+        "A": "Encapsulation.",
+        "B": "Inheritance.",
+        "C": "Polymorphism.",
+        "D": "Serialization."
+      },
+      "answer": "D",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q121",
+      "question": "What is the significance of the `is-a` relationship in OOP?",
+      "options": {
+        "A": "It describes composition (one object contains another).",
+        "B": "It describes inheritance (a derived class *is a* type of base class).",
+        "C": "It describes an interface implementation.",
+        "D": "It describes a static dependency."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q122",
+      "question": "What is the significance of the `has-a` relationship in OOP?",
+      "options": {
+        "A": "It describes inheritance.",
+        "B": "It describes composition (one object *has a* relationship with another object as a member).",
+        "C": "It describes polymorphism.",
+        "D": "It describes encapsulation."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q123",
+      "question": "What happens if a derived class declares a member with the same name as an inherited member without using `new` or `override`?",
+      "options": {
+        "A": "A compile-time error occurs.",
+        "B": "The derived class member implicitly hides the base class member, and the compiler issues a warning.",
+        "C": "The base class member is automatically overridden.",
+        "D": "A runtime error occurs."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q124",
+      "question": "What is the purpose of `base` keyword in a derived class constructor?",
+      "options": {
+        "A": "To call a static method in the base class.",
+        "B": "To access private members of the base class.",
+        "C": "To explicitly call a constructor of the immediate base class.",
+        "D": "To define a new base class."
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q125",
+      "question": "When can a `protected` member of a base class be accessed?",
+      "options": {
+        "A": "Only within the base class.",
+        "B": "Only by public methods of any class.",
+        "C": "Within the base class and by derived classes.",
+        "D": "Only by static methods."
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q126",
+      "question": "What is the key benefit of an `abstract method` in an abstract class?",
+      "options": {
+        "A": "It provides a default implementation that can be used directly.",
+        "B": "It enforces a contract, requiring all non-abstract derived classes to provide their own implementation.",
+        "C": "It allows optional implementation by derived classes.",
+        "D": "It is implicitly static."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q127",
+      "question": "Can a class inherit from multiple classes in C#?",
+      "options": {
+        "A": "Yes, C# supports multiple inheritance of classes.",
+        "B": "No, C# supports single inheritance for classes, but multiple inheritance for interfaces.",
+        "C": "Only if one of the classes is abstract.",
+        "D": "Only if both classes are sealed."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q128",
+      "question": "What is the purpose of the `virtual` keyword?",
+      "options": {
+        "A": "To make a method private.",
+        "B": "To allow a method to be overridden in a derived class.",
+        "C": "To define an abstract method.",
+        "D": "To make a method static."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q129",
+      "question": "What is the type of the `petName` and `currSpeed` variables in the `Car` class example (from 05_C#.pdf)?",
+      "options": {
+        "A": "Private fields",
+        "B": "Public properties",
+        "C": "Public fields",
+        "D": "Static variables"
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q130",
+      "question": "What is the output of `Console.WriteLine(\"{0} is going {1} MPH.\", petName, currSpeed);` within the `PrintState()` method?",
+      "options": {
+        "A": "It displays the memory address of the object.",
+        "B": "It prints the values of `petName` and `currSpeed` to the console.",
+        "C": "It returns a boolean value.",
+        "D": "It throws a format exception."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q131",
+      "question": "Which type of member is `SpeedUp (int delta) => currSpeed += delta;` an example of, based on its syntax?",
+      "options": {
+        "A": "A traditional method.",
+        "B": "An abstract method.",
+        "C": "An expression-bodied member.",
+        "D": "A property accessor."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q132",
+      "question": "What is the primary characteristic of a `record class` (as opposed to `record struct`) in C# 9.0?",
+      "options": {
+        "A": "It is a value type.",
+        "B": "It is implicitly mutable.",
+        "C": "It is a reference type with value-based equality.",
+        "D": "It cannot inherit from other classes."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q133",
+      "question": "The C# 9.0 feature of `init-only properties` is particularly useful for what purpose?",
+      "options": {
+        "A": "Creating mutable objects after initialization.",
+        "B": "Enforcing immutability for object properties after they are constructed.",
+        "C": "Allowing properties to be set only from static methods.",
+        "D": "Implementing lazy loading."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q134",
+      "question": "In the `Point` record struct example, `public record struct ReadOnlyPoint(double X, double Y, double Z);`, what does the `readonly` keyword imply?",
+      "options": {
+        "A": "The point cannot be used in calculations.",
+        "B": "The instance of `ReadOnlyPoint` and its properties (`X`, `Y`, `Z`) cannot be modified after creation.",
+        "C": "The point can only be read by other methods within the same class.",
+        "D": "The point is stored on the heap."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q135",
+      "question": "When defining properties with `get; init;` accessors, when can the property be assigned a value?",
+      "options": {
+        "A": "At any point after object creation.",
+        "B": "Only within the constructor or an object initializer.",
+        "C": "Only through a public method.",
+        "D": "Only if the object is declared as `static`."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q136",
+      "question": "What is a `property` in C#?",
+      "options": {
+        "A": "A public field that can be accessed directly.",
+        "B": "A member that provides flexible mechanisms to read, write, or compute the value of a private field.",
+        "C": "A static method.",
+        "D": "A global variable."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q137",
+      "question": "What is the primary benefit of using `System.Text.StringBuilder` over `System.String` for frequent string concatenations?",
+      "options": {
+        "A": "It automatically converts strings to numbers.",
+        "B": "It is immutable, preventing accidental changes.",
+        "C": "It is mutable, allowing efficient modifications without creating new string objects for each change.",
+        "D": "It uses less memory for single string operations."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q138",
+      "question": "What happens if you perform a `widening operation` (e.g., `int` to `long`) without an explicit cast?",
+      "options": {
+        "A": "A compile-time error occurs.",
+        "B": "A runtime exception is thrown.",
+        "C": "The conversion happens implicitly and safely, as no data is lost.",
+        "D": "The value is truncated."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q139",
+      "question": "What is the typical default behavior for overflow checking of integral-type arithmetic operations in C#?",
+      "options": {
+        "A": "Always checked.",
+        "B": "Always unchecked (overflows wrap around silently).",
+        "C": "Controlled by the `checked` or `unchecked` keywords.",
+        "D": "Depends on the specific data type."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q140",
+      "question": "When can a local function be used?",
+      "options": {
+        "A": "Anywhere in the application.",
+        "B": "Only outside of methods, similar to static methods.",
+        "C": "Within the scope of a method, constructor, property accessor, or local function itself.",
+        "D": "Only within a class definition, not a method."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q141",
+      "question": "What is `method overloading`?",
+      "options": {
+        "A": "Defining multiple methods with the same name but different return types.",
+        "B": "Defining multiple methods with the same name but different parameter lists (number, type, or order of parameters).",
+        "C": "Defining methods in derived classes that hide base class methods.",
+        "D": "Calling a method from another method."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q142",
+      "question": "What is the output if you run `dotnet run` on a C# project?",
+      "options": {
+        "A": "The project is compiled, and then the compiled executable is run.",
+        "B": "Only the project is compiled.",
+        "C": "Only Nuget packages are restored.",
+        "D": "The project opens in Visual Studio Code for debugging."
+      },
+      "answer": "A",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q143",
+      "question": "What is the primary function of `Nuget packages` in a C# project?",
+      "options": {
+        "A": "To manage project configurations.",
+        "B": "To provide reusable code libraries and tools.",
+        "C": "To handle debugging sessions.",
+        "D": "To define compiler settings."
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q144",
+      "question": "What is the purpose of setting a `breakpoint` in Visual Studio Code?",
+      "options": {
+        "A": "To stop the program execution at a specific line of code for inspection.",
+        "B": "To mark a line of code for deletion.",
+        "C": "To highlight syntax errors.",
+        "D": "To optimize code performance."
+      },
+      "answer": "A",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q145",
+      "question": "Which .NET CLI command explicitly restores all Nuget packages for a project or solution?",
+      "options": {
+        "A": "`dotnet build`",
+        "B": "`dotnet run`",
+        "C": "`dotnet restore`",
+        "D": "`dotnet publish`"
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q146",
+      "question": "What is the purpose of `IDEs` like Visual Studio Code and Visual Studio?",
+      "options": {
+        "A": "They are compilers only.",
+        "B": "They are text editors only.",
+        "C": "They provide a comprehensive environment for software development, including code editing, debugging, building, etc.",
+        "D": "They are used exclusively for deployment."
+      },
+      "answer": "C",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q147",
+      "question": "Which of the following is an example of a `value type` in C#?",
+      "options": {
+        "A": "`string`",
+        "B": "`int`",
+        "C": "A custom class object.",
+        "D": "An array."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q148",
+      "question": "Which of the following is an example of a `reference type` in C#?",
+      "options": {
+        "A": "`bool`",
+        "B": "`double`",
+        "C": "`class` (an instance of a custom class)",
+        "D": "`enum`"
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q149",
+      "question": "What happens when you pass a `value type` parameter to a method by default (without `ref`, `out`, or `in`)?",
+      "options": {
+        "A": "It is passed by reference, allowing the method to modify the original variable.",
+        "B": "A copy of the value is passed, so changes within the method do not affect the original variable.",
+        "C": "It is boxed to the heap.",
+        "D": "It is treated as an optional parameter."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q150",
+      "question": "What happens when you pass a `reference type` parameter to a method by default?",
+      "options": {
+        "A": "A copy of the object's value is passed.",
+        "B": "The object itself is copied to a new memory location.",
+        "C": "A copy of the reference (memory address) is passed, allowing the method to modify the original object's data.",
+        "D": "The object becomes read-only within the method."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q151",
+      "question": "What is `boxing` in C#?",
+      "options": {
+        "A": "Converting a reference type to a value type.",
+        "B": "Converting a value type to a reference type (wrapping it in an `System.Object` on the heap).",
+        "C": "Converting a string to an integer.",
+        "D": "Storing multiple values in a single variable."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q152",
+      "question": "What is `unboxing` in C#?",
+      "options": {
+        "A": "Converting a value type to a reference type.",
+        "B": "Converting a reference type (which was previously boxed) back to its original value type.",
+        "C": "Converting a string to an array.",
+        "D": "Removing elements from a collection."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q153",
+      "question": "What are `nullable value types` (e.g., `int?`, `double?`) used for?",
+      "options": {
+        "A": "To allow value types to hold string values.",
+        "B": "To allow value types to represent their normal range of values plus an additional `null` value.",
+        "C": "To make value types immutable.",
+        "D": "To store very large numbers."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q154",
+      "question": "What happens if you try to dereference a `null` nullable value type (e.g., `int? x = null; int y = x.Value;`) without checking for `null`?",
+      "options": {
+        "A": "It returns 0.",
+        "B": "It throws a `NullReferenceException`.",
+        "C": "It returns the default value of the underlying type.",
+        "D": "It's implicitly converted to a non-nullable type."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q155",
+      "question": "What is the `??` (null-coalescing) operator used for?",
+      "options": {
+        "A": "To check if two values are equal.",
+        "B": "To return the left-hand operand if it is not null; otherwise, it returns the right-hand operand.",
+        "C": "To combine two boolean values.",
+        "D": "To perform a bitwise OR operation."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q156",
+      "question": "What is the `?[]` (null-conditional index) operator used for?",
+      "options": {
+        "A": "To access an element in an array only if the array is not null.",
+        "B": "To declare a nullable array.",
+        "C": "To check if an array contains a null value.",
+        "D": "To create a new array with null elements."
+      },
+      "answer": "A",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q157",
+      "question": "What is the `?.` (null-conditional member access) operator used for?",
+      "options": {
+        "A": "To create a new object if the existing one is null.",
+        "B": "To access a member of an object only if the object is not null, otherwise returns null.",
+        "C": "To throw an exception if an object is null.",
+        "D": "To perform a safe cast operation."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q158",
+      "question": "What is the `! ` (null-forgiving) operator (new in C# 8.0) used for?",
+      "options": {
+        "A": "To throw a `NullReferenceException`.",
+        "B": "To suppress nullability warnings, asserting that an expression is not null.",
+        "C": "To assign a null value to a variable.",
+        "D": "To check if a variable is null."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q159",
+      "question": "What is a `static field` in a class?",
+      "options": {
+        "A": "A field whose value is unique for each object instance.",
+        "B": "A field that belongs to the class itself, shared by all instances, and exists even if no objects are created.",
+        "C": "A field that can only be accessed from outside the class.",
+        "D": "A field that can be changed by any method."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q160",
+      "question": "What is a `static property`?",
+      "options": {
+        "A": "A property that can be accessed only through an object instance.",
+        "B": "A property that belongs to the class and can be accessed directly using the class name.",
+        "C": "A property that is always read-only.",
+        "D": "A property that is unique to each thread."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q161",
+      "question": "What is a `static method`?",
+      "options": {
+        "A": "A method that requires an object instance to be called.",
+        "B": "A method that belongs to the class and can be called directly using the class name, without needing an object instance.",
+        "C": "A method that can only access instance members.",
+        "D": "A method that can be overridden by derived classes."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q162",
+      "question": "What is the primary use case for a `static class`?",
+      "options": {
+        "A": "To create multiple instances of the class.",
+        "B": "To define utility methods or data that do not require an object instance to operate.",
+        "C": "To implement polymorphic behavior.",
+        "D": "To encapsulate state that can change frequently."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q163",
+      "question": "Can a `static class` contain instance members (non-static fields, properties, methods)?",
+      "options": {
+        "A": "Yes, it can contain both static and instance members.",
+        "B": "No, a static class can only contain static members.",
+        "C": "Only if they are private.",
+        "D": "Only if it inherits from another class."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q164",
+      "question": "Can a `static class` be instantiated with the `new` keyword?",
+      "options": {
+        "A": "Yes, but only once.",
+        "B": "No, static classes cannot be instantiated.",
+        "C": "Only if it has a public constructor.",
+        "D": "Only if it is abstract."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q165",
+      "question": "Can a `static class` inherit from another class or interface?",
+      "options": {
+        "A": "Yes, it can inherit from both classes and interfaces.",
+        "B": "It can inherit from classes but not interfaces.",
+        "C": "It can implement interfaces but cannot inherit from classes (implicitly inherits from `System.Object`).",
+        "D": "No, it cannot inherit from or implement anything."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q166",
+      "question": "What is an `extension method` in C#?",
+      "options": {
+        "A": "A method that can extend the functionality of a base class.",
+        "B": "A static method that appears as if it were an instance method of an existing type, without modifying the original type.",
+        "C": "A method that adds new members to an interface.",
+        "D": "A method that is automatically generated by the compiler."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q167",
+      "question": "Which keyword must be used with the first parameter of an extension method?",
+      "options": {
+        "A": "`out`",
+        "B": "`ref`",
+        "C": "`this`",
+        "D": "`static`"
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q168",
+      "question": "What kind of class must an extension method be defined in?",
+      "options": {
+        "A": "An abstract class.",
+        "B": "A sealed class.",
+        "C": "A static, non-generic class.",
+        "D": "An instance class."
+      },
+      "answer": "C",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q169",
+      "question": "What is the primary benefit of `extension methods`?",
+      "options": {
+        "A": "To create new types.",
+        "B": "To add new behavior to existing types (even sealed types) without modifying their source code or creating new derived types.",
+        "C": "To improve memory management.",
+        "D": "To force inheritance."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q170",
+      "question": "When an `override` method calls `base.MethodName()`, what is it doing?",
+      "options": {
+        "A": "Calling the implementation of the method in the derived class.",
+        "B": "Calling the implementation of the method in the immediate base class.",
+        "C": "Calling a static method.",
+        "D": "Calling a method in a completely unrelated class."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q171",
+      "question": "What is the purpose of `virtual` keyword?",
+      "options": {
+        "A": "It means the method cannot be overridden.",
+        "B": "It means the method must be overridden.",
+        "C": "It declares a method that can be overridden by a derived class.",
+        "D": "It makes a method private."
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q172",
+      "question": "What is `early binding` in the context of method calls?",
+      "options": {
+        "A": "Method resolution occurs at runtime.",
+        "B": "Method resolution occurs at compile time based on the declared type of the variable.",
+        "C": "Method resolution uses the `new` keyword.",
+        "D": "Method resolution is determined by `virtual` members."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q173",
+      "question": "What is `late binding` (or dynamic binding) in the context of method calls?",
+      "options": {
+        "A": "Method resolution occurs at compile time.",
+        "B": "Method resolution occurs at runtime based on the actual type of the object.",
+        "C": "Method resolution is always fixed.",
+        "D": "Method resolution is only for value types."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q174",
+      "question": "When does polymorphism occur in C#?",
+      "options": {
+        "A": "When a derived class object is assigned to a variable of its derived type.",
+        "B": "When a derived class object is assigned to a variable of its base type, and a virtual method is called.",
+        "C": "Only when explicit casting is performed.",
+        "D": "Only with static methods."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q175",
+      "question": "What is the primary role of `abstract classes`?",
+      "options": {
+        "A": "To be instantiated directly.",
+        "B": "To define a common interface and possibly some shared implementation for a family of derived classes, but cannot be instantiated themselves.",
+        "C": "To provide concrete implementations for all their members.",
+        "D": "To prevent inheritance."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q176",
+      "question": "Can an `abstract class` have concrete (non-abstract) methods?",
+      "options": {
+        "A": "No, all methods in an abstract class must be abstract.",
+        "B": "Yes, an abstract class can have both abstract and concrete methods.",
+        "C": "Only if it is also sealed.",
+        "D": "Only if it implements an interface."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q177",
+      "question": "What is the purpose of the `System.Object.GetType()` method?",
+      "options": {
+        "A": "To return the base type of an object.",
+        "B": "To return the runtime type of the current instance.",
+        "C": "To return the compile-time type of a variable.",
+        "D": "To check if two objects are of the same type."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q178",
+      "question": "When is `System.Object.GetHashCode()` typically overridden?",
+      "options": {
+        "A": "When `ToString()` is overridden.",
+        "B": "When `Equals()` is overridden to provide custom value-based equality.",
+        "C": "When a class inherits from an abstract class.",
+        "D": "When defining static members."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q179",
+      "question": "What is the purpose of the `is` keyword combined with pattern matching (e.g., `if (obj is string s)`)?",
+      "options": {
+        "A": "To check type and perform an explicit cast, throwing an error on failure.",
+        "B": "To check type and then automatically assign the object to a new variable of that type if the match is successful.",
+        "C": "To check for null values only.",
+        "D": "To compare two objects for equality."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q180",
+      "question": "What is a `tuple-based switch expression`?",
+      "options": {
+        "A": "A `switch` statement that operates on a single integer.",
+        "B": "A `switch` expression that uses the deconstructed elements of a tuple as its input for pattern matching.",
+        "C": "A `switch` expression that can only compare strings.",
+        "D": "A `switch` expression that requires `if-else if` blocks."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q181",
+      "question": "What keyword is used to access members of the base class from within a derived class?",
+      "options": {
+        "A": "`this`",
+        "B": "`parent`",
+        "C": "`base`",
+        "D": "`super`"
+      },
+      "answer": "C",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q182",
+      "question": "If a method is declared as `static` in a base class, can it be overridden by a derived class using `override`?",
+      "options": {
+        "A": "Yes, always.",
+        "B": "No, static methods belong to the class type and cannot be overridden.",
+        "C": "Only if the derived class is also static.",
+        "D": "Only if the base class method is also virtual."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q183",
+      "question": "What is the purpose of the `protected internal` access modifier?",
+      "options": {
+        "A": "Accessible only within the same class.",
+        "B": "Accessible within the same assembly and by derived classes (even if in a different assembly).",
+        "C": "Accessible only by derived classes.",
+        "D": "Accessible only within the same assembly."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q184",
+      "question": "What is the purpose of the `private protected` access modifier (new in C# 7.2)?",
+      "options": {
+        "A": "Accessible by any code in the same assembly.",
+        "B": "Accessible within the containing class and by derived classes *only if they are in the same assembly*.",
+        "C": "Accessible by derived classes in any assembly.",
+        "D": "Accessible only by instance members."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q185",
+      "question": "What is the default access modifier for members of a class if none is specified?",
+      "options": {
+        "A": "`public`",
+        "B": "`private`",
+        "C": "`protected`",
+        "D": "`internal`"
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q186",
+      "question": "What is the default access modifier for types (classes, structs, enums) if none is specified?",
+      "options": {
+        "A": "`public`",
+        "B": "`private`",
+        "C": "`protected`",
+        "D": "`internal`"
+      },
+      "answer": "D",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q187",
+      "question": "What is the advantage of using `readonly` fields over `const` fields when the value is not known at compile time but is set once at object creation?",
+      "options": {
+        "A": "`const` fields can be set in the constructor.",
+        "B": "`readonly` fields can be initialized in the constructor, allowing for dynamic initialization.",
+        "C": "`readonly` fields consume less memory.",
+        "D": "`const` fields can be changed at runtime."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q188",
+      "question": "Can an `abstract method` be declared with a `virtual` keyword?",
+      "options": {
+        "A": "Yes, always.",
+        "B": "No, an abstract method is implicitly virtual and cannot have the `virtual` keyword.",
+        "C": "Only if the class is sealed.",
+        "D": "Only in interfaces."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q189",
+      "question": "What is the main reason for `System.String` being an immutable type?",
+      "options": {
+        "A": "To optimize memory usage for single string operations.",
+        "B": "To ensure thread safety and predictability, as string values cannot be changed after creation.",
+        "C": "To allow easy string concatenation.",
+        "D": "To enable direct modification of string characters."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q190",
+      "question": "Which of the following is true about `System.Text.StringBuilder`?",
+      "options": {
+        "A": "It is an immutable string.",
+        "B": "It is efficient for many small string modifications and concatenations.",
+        "C": "It is slower than `System.String` for large number of operations.",
+        "D": "It is a value type."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q191",
+      "question": "What is the purpose of `using static System.Console;` at the top of a C# file?",
+      "options": {
+        "A": "It imports the entire `System` namespace.",
+        "B": "It allows you to call static members of `System.Console` (like `WriteLine`) without prefixing them with `Console.`.",
+        "C": "It makes the `Console` class available for inheritance.",
+        "D": "It prevents the `Console` class from being instantiated."
+      },
+      "answer": "B",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q192",
+      "question": "What is the concept of `top-level statements` introduced in C# 9.0?",
+      "options": {
+        "A": "Code that can only be written inside a `Main` method.",
+        "B": "Code that can be written directly in the project file (.csproj).",
+        "C": "Allows code to be written directly at the root of a file without explicit `Main` method or class wrappers.",
+        "D": "Statements that execute only once per application lifecycle."
+      },
+      "answer": "C",
+      "source": "03_C#_02.pdf"
+    },
+    {
+      "id": "Q193",
+      "question": "In C#, what is the difference between an `enum` and a `class`?",
+      "options": {
+        "A": "Enums can inherit, classes cannot.",
+        "B": "Enums define a set of named constants, while classes define blueprints for objects.",
+        "C": "Enums are reference types, classes are value types.",
+        "D": "Classes are always implicitly static, enums are always instance-based."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q194",
+      "question": "What is `value-based equality` for `record` types?",
+      "options": {
+        "A": "Comparing memory addresses.",
+        "B": "Comparing the values of their public properties.",
+        "C": "Comparing their hash codes only.",
+        "D": "Only available for immutable types."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q195",
+      "question": "Can `record structs` be mutable?",
+      "options": {
+        "A": "No, they are always immutable.",
+        "B": "Yes, by not using the `readonly` keyword and defining `set` accessors for properties.",
+        "C": "Only if they are defined as `ref struct`.",
+        "D": "Only if they inherit from a class."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q196",
+      "question": "Which of the following describes the behavior of the `with` expression on a `record`?",
+      "options": {
+        "A": "It modifies the original record instance.",
+        "B": "It creates a new record instance with modifications, leaving the original unchanged.",
+        "C": "It converts the record to a class.",
+        "D": "It is used for type conversion."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q197",
+      "question": "What is the primary benefit of `explicit casting` in C#?",
+      "options": {
+        "A": "It allows a derived type to be treated as a base type without type checking.",
+        "B": "It allows safe conversion from a base type to a derived type, but requires the developer to confirm the type compatibility.",
+        "C": "It removes the need for `is` or `as` operators.",
+        "D": "It converts value types to reference types automatically."
+      },
+      "answer": "B",
+      "source": "06_C#.pdf"
+    },
+    {
+      "id": "Q198",
+      "question": "What is the `System.Index` structure (new in C# 8) used for?",
+      "options": {
+        "A": "To define the starting point of an array.",
+        "B": "To represent an index into a collection from the start or end, using the `^` operator for counting from the end.",
+        "C": "To create new array dimensions.",
+        "D": "To sort array elements."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q199",
+      "question": "What is the `System.Range` structure (new in C# 8) used for?",
+      "options": {
+        "A": "To specify a single element in a collection.",
+        "B": "To represent a sub-range of elements in a collection, using the `..` operator.",
+        "C": "To define the maximum size of an array.",
+        "D": "To perform arithmetic operations on arrays."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q200",
+      "question": "What is a `ref struct` (e.g., `Span<T>`) used for?",
+      "options": {
+        "A": "To define a class that can be passed by reference.",
+        "B": "To create stack-allocated types that avoid heap allocations and offer performance benefits for memory-intensive operations.",
+        "C": "To define a struct that can inherit from classes.",
+        "D": "To define a struct that is automatically boxed."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q201",
+      "question": "What is the main limitation of `ref struct` types regarding their usage?",
+      "options": {
+        "A": "They can be stored in arrays.",
+        "B": "They can be used as generic type arguments.",
+        "C": "They cannot be stored on the heap, boxed, or used in `async` methods.",
+        "D": "They can implement any interface."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q202",
+      "question": "What is the primary use case for `nullable reference types` (new in C# 8.0, enabled by default in C# 9.0+ projects)?",
+      "options": {
+        "A": "To allow reference types to hold string values.",
+        "B": "To help prevent `NullReferenceException` by making it explicit when a reference type can be null.",
+        "C": "To make reference types immutable.",
+        "D": "To enable automatic boxing and unboxing."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q203",
+      "question": "If `string? name;` is declared with nullable reference types enabled, what does the `?` indicate?",
+      "options": {
+        "A": "The `name` variable must always have a value.",
+        "B": "The `name` variable is allowed to be `null`.",
+        "C": "The `name` variable is an optional parameter.",
+        "D": "The `name` variable is read-only."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q204",
+      "question": "What is the purpose of `non-nullable reference types` when enabled?",
+      "options": {
+        "A": "To explicitly allow `null` assignments.",
+        "B": "To ensure that reference type variables are always initialized to a non-null value, providing warnings if `null` is assigned.",
+        "C": "To make all reference types mutable.",
+        "D": "To force all reference types to be stored on the stack."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q205",
+      "question": "What is the primary use case for the `in` parameter modifier?",
+      "options": {
+        "A": "To allow a method to modify a parameter's value.",
+        "B": "To pass a parameter by value, ensuring a copy is made.",
+        "C": "To pass a parameter by reference, but make it read-only within the method, avoiding copying for large structs.",
+        "D": "To declare an optional parameter."
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q206",
+      "question": "What is the purpose of the `default` keyword when initializing a property in a `record struct` (e.g., `public double X { get; init; } = default;`)?",
+      "options": {
+        "A": "It assigns a random value.",
+        "B": "It assigns the default value for the property's type (e.g., `0` for `double`, `null` for reference types).",
+        "C": "It means the property is optional.",
+        "D": "It indicates the property is read-only at runtime."
+      },
+      "answer": "B",
+      "source": "05_C#.pdf"
+    },
+    {
+      "id": "Q207",
+      "question": "What does `Console.WriteLine($\"Y is: {pointValues.YPos}\");` demonstrate?",
+      "options": {
+        "A": "Standard string concatenation.",
+        "B": "String interpolation (new in C# 6.0), allowing expressions directly within a string literal prefixed with `$`. ",
+        "C": "A method call that requires explicit formatting.",
+        "D": "An error due to incorrect syntax."
+      },
+      "answer": "B",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q208",
+      "question": "What is a `solution file` (`.sln`) in .NET?",
+      "options": {
+        "A": "A file that contains the source code for a single project.",
+        "B": "A file that organizes one or more projects, build configurations, and other related files into a single logical unit.",
+        "C": "A file that stores database connection strings.",
+        "D": "A file that defines compiler options for a single project."
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+    {
+      "id": "Q209",
+      "question": "When defining an array, if you declare it with a size (e.g., `new int[3]`) but don't explicitly fill all elements, what will be the value of `myInts[0]` if `myInts` is an `int[]`?",
+      "options": {
+        "A": "100",
+        "B": "A random garbage value.",
+        "C": "0 (the default value for `int`).",
+        "D": "`null`"
+      },
+      "answer": "C",
+      "source": "04_C#.pdf"
+    },
+    {
+      "id": "Q210",
+      "question": "What does `dotnet build` command do when executed in the same directory as a project file (*.csproj)?",
+      "options": {
+        "A": "Builds all projects in the solution.",
+        "B": "Builds only that single project.",
+        "C": "Restores Nuget packages only.",
+        "D": "Starts the application in debug mode."
+      },
+      "answer": "B",
+      "source": "03_C#_01.pdf"
+    },
+      {
+        "id": 211,
+        "question": "What is the primary characteristic of public members of a class in C#?",
+        "options": [
+          "They are only accessible within the class itself.",
+          "They are directly accessible once an object of the type has been created.",
+          "They can only be accessed by derived classes.",
+          "They are hidden from external access."
+        ],
+        "answer": "They are directly accessible once an object of the type has been created.",
+        "citation": "Public members of a class are directly accessible once an object of this type has been created."
+      },
+      {
+        "id": 212,
+        "question": "In C#, what term is used to describe an instance of a given class type created using the `new` keyword?",
+        "options": [
+          "Class",
+          "Module",
+          "Object",
+          "Assembly"
+        ],
+        "answer": "Object",
+        "citation": "Recall the term object is used to describe an instance of a given class type created using the new keyword."
+      },
+      {
+        "id": 213,
+        "question": "What is the recommended design practice for field data of a class to preserve data integrity?",
+        "options": [
+          "Define data as public.",
+          "Define data as private (or protected) and allow controlled access via properties.",
+          "Store data in global variables.",
+          "Avoid using any access modifiers."
+        ],
+        "answer": "Define data as private (or protected) and allow controlled access via properties.",
+        "citation": "To preserve the integrity of your state data, it is a far better design to define data as private (or possibly protected) and allow controlled access to the data via properties (as shown later in this chapter)."
+      },
+      {
+        "id": 214,
+        "question": "Which pillar of OOP was examined in Chapter 5, according to the text?",
+        "options": [
+          "Inheritance",
+          "Polymorphism",
+          "Abstraction",
+          "Encapsulation"
+        ],
+        "answer": "Encapsulation",
+        "citation": "Chapter 5 examined the first pillar of OOP: encapsulation."
+      },
+      {
+        "id": 215,
+        "question": "What two flavors of code reuse are mentioned in relation to OOP in the provided text?",
+        "options": [
+          "Copy-pasting and refactoring",
+          "Inheritance (is-a) and containment/delegation (has-a)",
+          "Templates and generics",
+          "Aspect-oriented programming and functional programming"
+        ],
+        "answer": "Inheritance (is-a) and containment/delegation (has-a)",
+        "citation": "Specifically speaking, code reuse comes in two flavors: inheritance (the 'is-a' relationship) and the containment/delegation model (the 'has-a' relationship)."
+      },
+      {
+        "id": 216,
+        "question": "What is the role of the colon token (:) in C# class declarations concerning inheritance?",
+        "options": [
+          "To define a new method.",
+          "To establish the parent class of a given type.",
+          "To declare a private member.",
+          "To initiate a loop."
+        ],
+        "answer": "To establish the parent class of a given type.",
+        "citation": "For example, recall that the colon token is used to establish the parent class of a given type."
+      },
+      {
+        "id": 217,
+        "question": "Which keyword is used by derived types to override virtual and/or abstract members defined in parent types?",
+        "options": [
+          "`new`",
+          "`base`",
+          "`override`",
+          "`abstract`"
+        ],
+        "answer": "`override`",
+        "citation": "Derived types override such members using the override keyword."
+      },
+      {
+        "id": 218,
+        "question": "What is the cosmic parent class in the .NET base class libraries, as discussed in the text?",
+        "options": [
+          "System.Collection",
+          "System.IO",
+          "System.Object",
+          "System.Runtime"
+        ],
+        "answer": "System.Object",
+        "citation": "The chapter will wrap up by examining the role of the ultimate parent class in the.NET base class libraries: System.Object."
+      },
+      {
+        "id": 219,
+        "question": "When declaring a C# array using the syntax `int[] myInts = new int[3]`, what does the number 3 represent?",
+        "options": [
+          "The upper bound of the array.",
+          "The starting index of the array.",
+          "The total number of items in the array.",
+          "The maximum value an element can hold."
+        ],
+        "answer": "The total number of items in the array.",
+        "citation": "When declaring a C# array using this syntax, the number used in the array declaration represents the total number of items, not the upper bound."
+      },
+      {
+        "id": 220,
+        "question": "What is the lower bound of an array in C#?",
+        "options": [
+          "1",
+          "-1",
+          "0",
+          "Determined by the user"
+        ],
+        "answer": "0",
+        "citation": "Also note that the lower bound of an array always begins at 0."
+      },
+      {
+        "id": 221,
+        "question": "If you declare a C# array but do not explicitly fill each index, what value will each item be set to for an array of integers?",
+        "options": [
+          "Null",
+          "Undefined",
+          "0",
+          "-1"
+        ],
+        "answer": "0",
+        "citation": "Do be aware that if you declare an array but do not explicitly fill each index, each item will be set to the default value of the data type (e.g., an array of bools will be set to false or an array of ints will be set to 0)."
+      },
+      {
+        "id": 222,
+        "question": "Which new feature in C# 8 allows the assignment of a variable in a concise statement within a control flow construct?",
+        "options": [
+          "Pattern matching",
+          "Switch statements",
+          "Switch expressions",
+          "GoTo statements"
+        ],
+        "answer": "Switch expressions",
+        "citation": "New in C# 8 are switch expressions, allowing the assignment of a variable in a concise statement."
+      },
+      {
+        "id": 223,
+        "question": "What was the small glitch with pattern matching in the initial release of C# 7, which was resolved with C# 7.1?",
+        "options": [
+          "Incorrect handling of null values.",
+          "Issues when using generic types.",
+          "Performance degradation with complex patterns.",
+          "Inability to match constant values."
+        ],
+        "answer": "Issues when using generic types.",
+        "citation": "With the initial release of C# 7, there was a small glitch with pattern matching when using generic types. This has been resolved with C# 7.1."
+      },
+      {
+        "id": 224,
+        "question": "What is a key benefit of using file-scoped namespaces (new in C# 10) compared to traditional block-scoped namespaces?",
+        "options": [
+          "It limits the number of classes in a file.",
+          "It adds more indentation and complexity.",
+          "It reduces extra code and indentation.",
+          "It is only for internal use within the .NET framework."
+        ],
+        "answer": "It reduces extra code and indentation.",
+        "citation": "As your code becomes more complex, this can add a lot of extra code and indentation. With file scoped namespaces, the following code achieves the same effect: namespace CalculatorExamples class Calculator() { ... }"
+      },
+      {
+        "id": 225,
+        "question": "In prior versions of the .NET Framework, where were framework libraries commonly installed?",
+        "options": [
+          "Locally in each project folder.",
+          "The Global Assembly Cache (GAC).",
+          "Cloud-based repositories only.",
+          "User-defined directories."
+        ],
+        "answer": "The Global Assembly Cache (GAC).",
+        "citation": "Prior versions of the .NET Framework used a common installation location for framework libraries known as the Global Assembly Cache (GAC)."
+      },
+      {
+        "id": 226,
+        "question": "How are new record structs made immutable in C#?",
+        "options": [
+          "By using the `const` keyword.",
+          "By adding the `readonly` keyword.",
+          "By declaring all properties as private.",
+          "By omitting constructors."
+        ],
+        "answer": "By adding the `readonly` keyword.",
+        "citation": "The previous two record struct examples can be made immutable by adding the readonly keyword."
+      },
+      {
+        "id": 227,
+        "question": "What is the primary method for adding assemblies into most .NET projects, as mentioned in the text?",
+        "options": [
+          "Manually copying DLLs.",
+          "Using NuGet packages.",
+          "Registering with the system registry.",
+          "Directly referencing COM libraries for all platforms."
+        ],
+        "answer": "Using NuGet packages.",
+        "citation": "Adding assemblies into most .NET projects is done by adding NuGet packages (covered later in this text)."
+      },
+      {
+        "id": 228,
+        "question": "What are the two primary programming languages for ASP.NET Core applications mentioned in the book?",
+        "options": [
+          "VB.NET and F#",
+          "C# and F#",
+          "C# and Java",
+          "Python and C++"
+        ],
+        "answer": "C# and F#",
+        "citation": "Support for numerous programming languages: .NET applications can be created using C#, F#, and VB.NET programming languages (with C# and F# being the primary languages for ASP.NET Core)."
+      },
+      {
+        "id": 229,
+        "question": "What is the core function of `object.ReferenceEquals(p3, p4)` in C#?",
+        "options": [
+          "Checks if the objects have the same state.",
+          "Checks if the objects are pointing to the same object in memory.",
+          "Compares the hash codes of the objects.",
+          "Determines if the objects are of the same type."
+        ],
+        "answer": "Checks if the objects are pointing to the same object in memory.",
+        "citation": "Console.WriteLine(\"P3 and P4 are pointing to same object: {0}\", object.ReferenceEquals(p3, p4));"
+      },
+      {
+        "id": 230,
+        "question": "What is the primary use of the `dotnet run` command in the .NET CLI?",
+        "options": [
+          "To build the project.",
+          "To restore NuGet packages.",
+          "To run your project without debugging.",
+          "To debug your project."
+        ],
+        "answer": "To run your project without debugging.",
+        "citation": "To run your project without debugging, execute the following .NET CLI command in the same directory as the project file (SimpleCSharpConsoleApp.csproj): dotnet run"
+      },
+        {
+          "id": 231,
+          "question": "What is the primary purpose of the `Main()` method in a C# executable program?",
+          "options": [
+            "To declare global variables.",
+            "To serve as the entry point of the program.",
+            "To define custom classes.",
+            "To handle database connections."
+          ],
+          "answer": "To serve as the entry point of the program.",
+          "citation": "This chapter begins your formal investigation of the C# programming language by presenting a number of bite-sized, stand-alone topics you must be comfortable with as you explore the .NET Core Framework. The first order of business is to understand how to build your program's application object and to examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements."
+        },
+        {
+          "id": 232,
+          "question": "What new C# 9.0 feature is mentioned as an alternative to explicitly defining a `Main()` method?",
+          "options": [
+            "Extension methods",
+            "Partial classes",
+            "Top-level statements",
+            "Lambda expressions"
+          ],
+          "answer": "Top-level statements",
+          "citation": "This chapter begins your formal investigation of the C# programming language by presenting a number of bite-sized, stand-alone topics you must be comfortable with as you explore the .NET Core Framework. The first order of business is to understand how to build your program's application object and to examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements."
+        },
+        {
+          "id": 233,
+          "question": "What is the primary benefit of the C# `var` keyword?",
+          "options": [
+            "It allows explicit type definition.",
+            "It forces strong typing.",
+            "It allows you to implicitly define a local variable.",
+            "It is used for defining global constants."
+          ],
+          "answer": "It allows you to implicitly define a local variable.",
+          "citation": "This chapter will also examine the role of the C# var keyword, which allows you to implicitly define a local variable."
+        },
+        {
+          "id": 234,
+          "question": "When is implicit typing using `var` particularly helpful, as mentioned in the text?",
+          "options": [
+            "When working with COM interoperability.",
+            "When defining public API methods.",
+            "When working with the LINQ technology set.",
+            "When creating console applications."
+          ],
+          "answer": "When working with the LINQ technology set.",
+          "citation": "As you will see later in this book, implicit typing is extremely helpful, if not occasionally mandatory, when working with the LINQ technology set."
+        },
+        {
+          "id": 235,
+          "question": "Which type of operation involves converting a larger data type to a smaller one, potentially losing data?",
+          "options": [
+            "Widening operation",
+            "Narrowing operation",
+            "Boxing operation",
+            "Unboxing operation"
+          ],
+          "answer": "Narrowing operation",
+          "citation": "After you know the details of the fundamental.NET Core data types, you will then examine a number of data type conversion techniques, including narrowing operations, widening operations, and the use of the checked and unchecked keywords."
+        },
+        {
+          "id": 236,
+          "question": "What happens if you declare a C# array of `bool`s but don't explicitly fill each index?",
+          "options": [
+            "Each item will be set to `null`.",
+            "Each item will be set to `true`.",
+            "Each item will be set to `false`.",
+            "An exception will be thrown."
+          ],
+          "answer": "Each item will be set to `false`.",
+          "citation": "Do be aware that if you declare an array but do not explicitly fill each index, each item will be set to the default value of the data type (e.g., an array of bools will be set to false or an array of ints will be set to 0)."
+        },
+        {
+          "id": 237,
+          "question": "What is the primary benefit of using C# array initialization syntax (e.g., `{100, 200, 300}`)?",
+          "options": [
+            "It is slower than element-by-element assignment.",
+            "It requires more code.",
+            "It simplifies the process of filling array items.",
+            "It only works for single-dimensional arrays."
+          ],
+          "answer": "It simplifies the process of filling array items.",
+          "citation": "In addition to filling an array element by element, you can fill the items of an array using C# array initialization syntax. To do so, specify each array item within the scope of curly brackets ({}). This syntax can be helpful when..."
+        },
+        {
+          "id": 238,
+          "question": "What concept does the `Car` class example in Chapter 5 primarily demonstrate?",
+          "options": [
+            "Inheritance",
+            "Polymorphism",
+            "Encapsulation (defining state and behavior)",
+            "Generics"
+          ],
+          "answer": "Encapsulation (defining state and behavior)",
+          "citation": "After you have defined the set of member variables representing the state of the class, the next design step is to establish the members that model its behavior. For this example, the Car class will define one method named SpeedUp() and another named PrintState()."
+        },
+        {
+          "id": 239,
+          "question": "What is the purpose of the `PrintState()` method in the `Car` class example?",
+          "options": [
+            "To modify the car's speed.",
+            "To display the car's current state to the console.",
+            "To create new car objects.",
+            "To save the car's state to a file."
+          ],
+          "answer": "To display the car's current state to the console.",
+          "citation": "PrintState() is more or less a diagnostic function that will simply dump the current state of a given Car object to the command window."
+        },
+        {
+          "id": 240,
+          "question": "What is the 'is-a' relationship in OOP primarily related to?",
+          "options": [
+            "Containment",
+            "Delegation",
+            "Inheritance",
+            "Composition"
+          ],
+          "answer": "Inheritance",
+          "citation": "Specifically speaking, code reuse comes in two flavors: inheritance (the 'is-a' relationship) and the containment/delegation model (the 'has-a' relationship). Let's begin this chapter by examining the classical inheritance model of the 'is-a' relationship."
+        },
+          {
+            "id": 241,
+            "question": "Which access modifier allows members of a class to be accessible from within the class itself and by derived classes?",
+            "options": [
+              "Public",
+              "Private",
+              "Protected",
+              "Internal"
+            ],
+            "answer": "Protected",
+            "citation": "To preserve the integrity of your state data, it is a far better design to define data as private (or possibly protected) and allow controlled access to the data via properties (as shown later in this chapter)."
+          },
+          {
+            "id": 242,
+            "question": "What is the primary function of a constructor in a C# class?",
+            "options": [
+              "To destroy an object.",
+              "To initialize the state of an object.",
+              "To define static members.",
+              "To handle events."
+            ],
+            "answer": "To initialize the state of an object.",
+            "citation": "This chapter begins your formal investigation of the C# programming language by presenting a number of bite-sized, stand-alone topics you must be comfortable with as you explore the .NET Core Framework. The first order of business is to understand how to build your program's application object and to examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements. Next, you will investigate the fundamental C# data types (and their equivalent types in the System namespace) including an examination of the System. String and System.Text.StringBuilder classes."
+          },
+          {
+            "id": 243,
+            "question": "What is the key advantage of using System.Text.StringBuilder over System.String for frequent string manipulations?",
+            "options": [
+              "StringBuilder creates immutable strings, improving performance.",
+              "StringBuilder is designed for efficient concatenation of numerous strings.",
+              "String objects are faster for large number of appends.",
+              "StringBuilder does not require memory allocation."
+            ],
+            "answer": "StringBuilder is designed for efficient concatenation of numerous strings.",
+            "citation": "This chapter will examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements. Next, you will investigate the fundamental C# data types (and their equivalent types in the System namespace) including an examination of the System. String and System.Text.StringBuilder classes."
+          },
+          {
+            "id": 244,
+            "question": "What is the name of the process that converts a value type to a reference type?",
+            "options": [
+              "Unboxing",
+              "Casting",
+              "Boxing",
+              "Conversion"
+            ],
+            "answer": "Boxing",
+            "citation": "This chapter will discuss value types and reference types and the concepts of boxing and unboxing."
+          },
+          {
+            "id": 245,
+            "question": "Which keyword is used to explicitly convert between base and derived types?",
+            "options": [
+              "`new`",
+              "`this`",
+              "`as`",
+              "`(typename)`"
+            ],
+            "answer": "`(typename)`",
+            "citation": "In addition to building numerous class hierarchies, this chapter also examined how to explicitly cast between base and derived types and wrapped up by diving into the details of the cosmic parent class in the .NET base class libraries: System.Object."
+          },
+          {
+            "id": 246,
+            "question": "What is the `checked` keyword used for in C#?",
+            "options": [
+              "To ensure type safety in generic collections.",
+              "To prevent integer overflow during arithmetic operations.",
+              "To perform compile-time checks for null references.",
+              "To enable strict mode for string comparisons."
+            ],
+            "answer": "To prevent integer overflow during arithmetic operations.",
+            "citation": "After you know the details of the fundamental .NET Core data types, you will then examine a number of data type conversion techniques, including narrowing operations, widening operations, and the use of the checked and unchecked keywords."
+          },
+          {
+            "id": 247,
+            "question": "What does the 'has-a' relationship in OOP refer to?",
+            "options": [
+              "Inheritance",
+              "Polymorphism",
+              "Containment/Delegation",
+              "Abstraction"
+            ],
+            "answer": "Containment/Delegation",
+            "citation": "Specifically speaking, code reuse comes in two flavors: inheritance (the 'is-a' relationship) and the containment/delegation model (the 'has-a' relationship)."
+          },
+          {
+            "id": 248,
+            "question": "Which method of `System.Object` is used to check if two objects are pointing to the same memory location?",
+            "options": [
+              "`Equals()`",
+              "`GetHashCode()`",
+              "`ReferenceEquals()`",
+              "`GetType()`"
+            ],
+            "answer": "`ReferenceEquals()`",
+            "citation": "Console.WriteLine(\"P3 and P4 are pointing to same object: {0}\", object.ReferenceEquals(p3, p4));"
+          },
+          {
+            "id": 249,
+            "question": "What is the primary characteristic of an abstract member in a parent type?",
+            "options": [
+              "It provides a complete implementation.",
+              "It must be overridden by derived types.",
+              "It cannot be accessed by derived types.",
+              "It is only used for private functionality."
+            ],
+            "answer": "It must be overridden by derived types.",
+            "citation": "Parent types are able to define any number of virtual and/or abstract members to establish a polymorphic interface. Derived types override such members using the override keyword."
+          },
+          {
+            "id": 250,
+            "question": "What is the purpose of the `dotnet restore` command?",
+            "options": [
+              "To build the project.",
+              "To run the project.",
+              "To restore NuGet packages.",
+              "To create a new project."
+            ],
+            "answer": "To restore NuGet packages.",
+            "citation": "To ensure that all of the NuGet packages are restored, execute the following command in the terminal/command window: dotnet restore"
+          },
+          {
+            "id": 251,
+            "question": "What command is used to build all projects in a solution file using the .NET CLI?",
+            "options": [
+              "dotnet run",
+              "dotnet publish",
+              "dotnet build",
+              "dotnet test"
+            ],
+            "answer": "dotnet build",
+            "citation": "To restore and build all of the projects in your solution, execute the following in the terminal/command window (again, making sure the command is executed in the same directory as the solution file): dotnet build"
+          },
+          {
+            "id": 252,
+            "question": "Which IDEs are primarily mentioned for building C# applications in the provided text?",
+            "options": [
+              "Eclipse and IntelliJ IDEA",
+              "Xcode and Android Studio",
+              "Visual Studio Code and Visual Studio",
+              "NetBeans and Sublime Text"
+            ],
+            "answer": "Visual Studio Code and Visual Studio",
+            "citation": "The point of this chapter is to provide the information you need to install the .NET 6 SDK and runtime and to present a first look at Microsoft's flagship IDEs, Visual Studio Code and Visual Studio."
+          },
+          {
+            "id": 253,
+            "question": "When was .NET 6 launched by Microsoft?",
+            "options": [
+              "2002",
+              "2016",
+              "November 8, 2021",
+              "May 8, 2022"
+            ],
+            "answer": "November 8, 2021",
+            "citation": "Microsoft launched C# 10 and .NET 6 on November 8, 2021."
+          },
+          {
+            "id": 254,
+            "question": "What does the acronym SDK stand for in the context of .NET?",
+            "options": [
+              "Software Development Kit",
+              "System Deployment Kernel",
+              "Standard Database Kit",
+              "Source Debugging Kit"
+            ],
+            "answer": "Software Development Kit",
+            "citation": "To get started developing applications with C# 10 and .NET 6 (on Windows, macOS, or Linux), the .NET 6 SDK needs to be installed (which also installs the .NET 6 runtime)."
+          },
+          {
+            "id": 255,
+            "question": "What is a key benefit of ASP.NET Core regarding its runtime?",
+            "options": [
+              "It only runs on Windows.",
+              "It is a high-performance, cross-platform, open-source runtime.",
+              "It requires a specific database for deployment.",
+              "It is limited to desktop applications."
+            ],
+            "answer": "It is a high-performance, cross-platform, open-source runtime.",
+            "citation": "ASP.NET Core runs on .NET 7, which is the latest version of .NET Core—a high-performance, cross-platform, open-source runtime."
+          },
+          {
+            "id": 256,
+            "question": "What are 'minimal APIs' primarily used for in ASP.NET Core?",
+            "options": [
+              "Building desktop applications.",
+              "Creating HTTP API applications.",
+              "Developing complex UI components.",
+              "Managing database migrations."
+            ],
+            "answer": "Creating HTTP API applications.",
+            "citation": "How to build HTTP API applications using minimal APIs"
+          },
+          {
+            "id": 257,
+            "question": "What is a 'type' in the world of .NET, as described by the Common Type System (CTS)?",
+            "options": [
+              "A database table.",
+              "A general term referring to members from the set {class, interface, structure, enumeration, delegate}.",
+              "A predefined variable.",
+              "A network protocol."
+            ],
+            "answer": "A general term referring to members from the set {class, interface, structure, enumeration, delegate}.",
+            "citation": "In the world of .NET, type is simply a general term used to refer to a member from the set {class, interface, structure, enumeration, delegate}."
+          },
+          {
+            "id": 258,
+            "question": "What is one aspect of the common runtime engine shared by all .NET languages?",
+            "options": [
+              "It forces all languages to have identical syntax.",
+              "It provides a well-defined set of types that each .NET language understands.",
+              "It dictates the user interface design.",
+              "It only allows single-threaded execution."
+            ],
+            "answer": "It provides a well-defined set of types that each .NET language understands.",
+            "citation": "A common runtime engine shared by all .NET languages: One aspect of this engine is a well-defined set of types that each .NET language understands."
+          },
+          {
+            "id": 259,
+            "question": "What is the primary function of the `System.String` class in C#?",
+            "options": [
+              "To perform complex mathematical operations.",
+              "To represent immutable sequences of Unicode characters.",
+              "To handle file I/O operations.",
+              "To manage network connections."
+            ],
+            "answer": "To represent immutable sequences of Unicode characters.",
+            "citation": "Next, you will investigate the fundamental C# data types (and their equivalent types in the System namespace) including an examination of the System. String and System.Text.StringBuilder classes."
+          },
+          {
+            "id": 260,
+            "question": "What is the role of the `unchecked` keyword in C#?",
+            "options": [
+              "To enforce strict type checking.",
+              "To disable integer overflow checking during arithmetic operations.",
+              "To ensure all variables are initialized.",
+              "To allow implicit type conversions without warning."
+            ],
+            "answer": "To disable integer overflow checking during arithmetic operations.",
+            "citation": "After you know the details of the fundamental .NET Core data types, you will then examine a number of data type conversion techniques, including narrowing operations, widening operations, and the use of the checked and unchecked keywords."
+          },
+          {
+            "id": 261,
+            "question": "What is the purpose of `System.Object.Equals(obj1, obj2)` when comparing two objects, as shown in the example?",
+            "options": [
+              "Checks if the objects are of the same type.",
+              "Checks if the objects refer to the same memory location.",
+              "Checks if the objects have the same state or value.",
+              "Compares the object's hash codes."
+            ],
+            "answer": "Checks if the objects have the same state or value.",
+            "citation": "Console.WriteLine(\"P3 and P4 have same state: {0}\", object.Equals(p3, p4));"
+          },
+          {
+            "id": 262,
+            "question": "What is the primary benefit of the `.NET` platform's simplified deployment model?",
+            "options": [
+              "Requires manual registration of libraries in the system registry.",
+              "Allows multiple versions of the framework and applications to coexist.",
+              "Limits applications to a single operating system.",
+              "Increases the complexity of deployment."
+            ],
+            "answer": "Allows multiple versions of the framework and applications to coexist.",
+            "citation": "A simplified deployment model: .NET libraries are not registered into the system registry. Furthermore, the .NET platform allows multiple versions of the framework as well as appli..."
+          },
+          {
+            "id": 263,
+            "question": "What concept is demonstrated by the `SpeedUp()` method in the `Car` class example?",
+            "options": [
+              "Data encapsulation (state)",
+              "Behavior (functionality)",
+              "Inheritance",
+              "Polymorphism"
+            ],
+            "answer": "Behavior (functionality)",
+            "citation": "After you have defined the set of member variables representing the state of the class, the next design step is to establish the members that model its behavior. For this example, the Car class will define one method named SpeedUp() and another named PrintState()."
+          },
+          {
+            "id": 264,
+            "question": "Which term describes the process of converting a reference type back to a value type?",
+            "options": [
+              "Boxing",
+              "Unboxing",
+              "Casting",
+              "Widening"
+            ],
+            "answer": "Unboxing",
+            "citation": "This chapter will discuss value types and reference types and the concepts of boxing and unboxing."
+          },
+          {
+            "id": 265,
+            "question": "What was a significant change regarding the 'Core' part of the .NET name with the release of .NET 5?",
+            "options": [
+              "It was renamed to .NET Framework.",
+              "The 'Core' part of the name was dropped.",
+              "It became a Windows-only platform.",
+              "It was merged with Java."
+            ],
+            "answer": "The 'Core' part of the name was dropped.",
+            "citation": "Note With the release of .NET 5, the \"Core\" part of the name was dropped. Throughout this book, the term .NET refers to .NET Core (up to 3.1) and .NET 5/6"
+          },
+          {
+            "id": 266,
+            "question": "What is the main purpose of the `global.json` file in a .NET project?",
+            "options": [
+              "To define project dependencies.",
+              "To configure database connections.",
+              "To specify the .NET SDK version to be used by a project or solution.",
+              "To manage user interface elements."
+            ],
+            "answer": "To specify the .NET SDK version to be used by a project or solution.",
+            "citation": "The --version option displays the highest version of the SDK installed on your machine, or the version specified in a global.json located at or above your current directory."
+          },
+          {
+            "id": 267,
+            "question": "What type of applications can ASP.NET Core be used to build, as mentioned in the text?",
+            "options": [
+              "Only desktop applications.",
+              "Server-rendered web applications, backend server applications, HTTP APIs.",
+              "Only mobile games.",
+              "Embedded systems applications."
+            ],
+            "answer": "Server-rendered web applications, backend server applications, HTTP APIs.",
+            "citation": "You can use ASP.NET Core to build server-rendered web applications, backend server applications, HTTP APIs that can be consumed by mobile applications, and much more."
+          },
+          {
+            "id": 268,
+            "question": "What is a major advantage of .NET Core over previous .NET Framework versions regarding platform support?",
+            "options": [
+              "It only runs on Windows Server.",
+              "It is limited to desktop Windows applications.",
+              "It can run on iOS, Linux, and Windows.",
+              "It only supports web applications on specific servers."
+            ],
+            "answer": "It can run on iOS, Linux, and Windows.",
+            "citation": "More importantly, this new framework is no longer limited to running on the Windows operating system but can also run on iOS, and Linux and be developed on MacOS and Linux."
+          },
+          {
+            "id": 269,
+            "question": "What are 'Tag Helpers' used for in ASP.NET Core Razor syntax?",
+            "options": [
+              "To manage server-side logic.",
+              "To generate HTML for web pages.",
+              "To define database schemas.",
+              "To control client-side scripting."
+            ],
+            "answer": "To generate HTML for web pages.",
+            "citation": "How to generate HTML for web pages by using Razor syntax and Tag Helpers"
+          },
+          {
+            "id": 270,
+            "question": "What is the primary role of an 'assembly' in the .NET environment?",
+            "options": [
+              "A single source code file.",
+              "The smallest deployable unit of a .NET application, containing compiled code and metadata.",
+              "A database schema.",
+              "A network configuration file."
+            ],
+            "answer": "The smallest deployable unit of a .NET application, containing compiled code and metadata.",
+            "citation": "In a nutshell, the manifest documents the set of external assemblies required by Calc.dll (via the .assembly extern directive) as well as various characteristics of the assembly itself (e.g., version number, module name)."
+          },
+          {
+            "id": 271,
+            "question": "In C#, what is the purpose of the `readonly` keyword when applied to a record struct?",
+            "options": [
+              "To make the struct mutable.",
+              "To prevent any modification of its members after initialization.",
+              "To allow only private access to its fields.",
+              "To enable lazy initialization."
+            ],
+            "answer": "To prevent any modification of its members after initialization.",
+            "citation": "The previous two record struct examples can be made immutable by adding the readonly keyword."
+          },
+          {
+            "id": 272,
+            "question": "What is the purpose of the `init` accessor in C# properties (as seen in record structs)?",
+            "options": [
+              "Allows the property to be set only in the constructor or using an object initializer.",
+              "Allows the property to be set at any time.",
+              "Makes the property read-only after creation.",
+              "Allows the property to be set only by private methods."
+            ],
+            "answer": "Allows the property to be set only in the constructor or using an object initializer.",
+            "citation": "public double X { get; init; } = default;"
+          },
+          {
+            "id": 273,
+            "question": "What type of pattern matching was introduced in C# 8, allowing concise variable assignment within control flow?",
+            "options": [
+              "Type patterns",
+              "Property patterns",
+              "Switch expressions",
+              "Recursive patterns"
+            ],
+            "answer": "Switch expressions",
+            "citation": "New in C# 8 are switch expressions, allowing the assignment of a variable in a concise statement."
+          },
+          {
+            "id": 274,
+            "question": "What is the primary function of the `object.GetHashCode()` method?",
+            "options": [
+              "To compare two objects for equality.",
+              "To return a unique integer value for an object, typically used in hash tables.",
+              "To convert an object to a string representation.",
+              "To determine the memory address of an object."
+            ],
+            "answer": "To return a unique integer value for an object, typically used in hash tables.",
+            "citation": "This method returns an integer that is unique for a given object."
+          },
+          {
+            "id": 275,
+            "question": "What is the purpose of 'dependency injection' in ASP.NET Core?",
+            "options": [
+              "To reduce code complexity by directly instantiating all dependencies.",
+              "To manage the creation and lifetime of objects and their dependencies.",
+              "To inject malicious code into an application.",
+              "To perform client-side validation."
+            ],
+            "answer": "To manage the creation and lifetime of objects and their dependencies.",
+            "citation": "How to use features such as dependency injection, configuration, and logging as your applications grow more complex"
+          },
+          {
+            "id": 276,
+            "question": "What is the expected output type of a `Main()` method if it does not return any value?",
+            "options": [
+              "Int",
+              "String",
+              "Void",
+              "Boolean"
+            ],
+            "answer": "Void",
+            "citation": "The first order of business is to understand how to build your program's application object and to examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements."
+          },
+          {
+            "id": 277,
+            "question": "What is the term for a local variable whose type is inferred by the compiler at compile time?",
+            "options": [
+              "Explicitly typed variable",
+              "Dynamically typed variable",
+              "Implicitly typed variable",
+              "Globally typed variable"
+            ],
+            "answer": "Implicitly typed variable",
+            "citation": "This chapter will also examine the role of the C# var keyword, which allows you to implicitly define a local variable."
+          },
+          {
+            "id": 278,
+            "question": "What happens if a `dotnet restore` or `dotnet build` command is executed in a directory containing a solution file?",
+            "options": [
+              "Only the first project in the solution is acted on.",
+              "All projects in the solution are acted on.",
+              "The command fails with an error.",
+              "Only the current project is built."
+            ],
+            "answer": "All projects in the solution are acted on.",
+            "citation": "When dotnet restore and dotnet build are executed in a directory that contains a solution file, all of the projects in the solution are acted on."
+          },
+          {
+            "id": 279,
+            "question": "What is one of the programming languages supported by .NET in addition to C# and F#?",
+            "options": [
+              "Java",
+              "Python",
+              "VB.NET",
+              "Ruby"
+            ],
+            "answer": "VB.NET",
+            "citation": ".NET applications can be created using C#, F#, and VB.NET programming languages (with C# and F# being the primary languages for ASP.NET Core)."
+          },
+          {
+            "id": 280,
+            "question": "What does 'platform independence' mean for .NET Core?",
+            "options": [
+              "It can only run on Microsoft Windows.",
+              "It means it can run on multiple operating systems like Windows, macOS, and Linux.",
+              "It relies on specific hardware configurations.",
+              "It limits the choice of programming languages."
+            ],
+            "answer": "It means it can run on multiple operating systems like Windows, macOS, and Linux.",
+            "citation": "More importantly, this new framework is no longer limited to running on the Windows operating system but can also run on iOS, and Linux and be developed on MacOS and Linux. This platform independence opened up .NET and C# to a much larger pool of developers."
+          },
+          {
+            "id": 281,
+            "question": "What is the role of the `new` keyword when creating an object of a class type?",
+            "options": [
+              "To destroy the object.",
+              "To declare a static member.",
+              "To allocate memory for the object and call its constructor.",
+              "To cast an object to a different type."
+            ],
+            "answer": "To allocate memory for the object and call its constructor.",
+            "citation": "Recall the term object is used to describe an instance of a given class type created using the new keyword."
+          },
+          {
+            "id": 282,
+            "question": "Which of the following is NOT a fundamental C# data type explicitly mentioned for investigation in Chapter 3?",
+            "options": [
+              "System.String",
+              "System.Text.StringBuilder",
+              "System.DateTime",
+              "Integer types"
+            ],
+            "answer": "System.DateTime",
+            "citation": "Next, you will investigate the fundamental C# data types (and their equivalent types in the System namespace) including an examination of the System. String and System.Text.StringBuilder classes."
+          },
+          {
+            "id": 283,
+            "question": "What is the purpose of 'model-binding' in ASP.NET Core?",
+            "options": [
+              "To establish relationships between database tables.",
+              "To map incoming HTTP request data to action method parameters.",
+              "To define the visual appearance of web pages.",
+              "To compile C# code into executable assemblies."
+            ],
+            "answer": "To map incoming HTTP request data to action method parameters.",
+            "citation": "Key ASP.NET Core concepts such as model-binding, validation, and routing"
+          },
+          {
+            "id": 284,
+            "question": "What is the term for a method that simply outputs the current state of an object to a console window, as described for the `PrintState()` method?",
+            "options": [
+              "Mutator function",
+              "Diagnostic function",
+              "Accessor function",
+              "Constructor"
+            ],
+            "answer": "Diagnostic function",
+            "citation": "PrintState() is more or less a diagnostic function that will simply dump the current state of a given Car object to the command window."
+          },
+          {
+            "id": 285,
+            "question": "What is one way to explicitly debug a program in Visual Studio Code after setting a breakpoint?",
+            "options": [
+              "Execute `dotnet run`.",
+              "Click the Debug icon, then click Run and Debug.",
+              "Rebuild the solution.",
+              "Open the project in a web browser."
+            ],
+            "answer": "Click the Debug icon, then click Run and Debug.",
+            "citation": "To debug your program after setting a break point, click the Debug icon (2 in Figure 2-14), then click Run and Debug (Figure 2-15)."
+          },
+          {
+            "id": 286,
+            "question": "What is the significance of the `ILONLY` flag in an assembly's manifest?",
+            "options": [
+              "Indicates the assembly contains only native machine code.",
+              "Indicates the assembly contains only Intermediate Language (IL) code, making it platform-independent.",
+              "Indicates the assembly is for internal use only.",
+              "Indicates the assembly has no external dependencies."
+            ],
+            "answer": "Indicates the assembly contains only Intermediate Language (IL) code, making it platform-independent.",
+            "citation": ".corflags 0x00000001 // ILONLY"
+          },
+          {
+            "id": 287,
+            "question": "What is a 'widening operation' in the context of C# data type conversions?",
+            "options": [
+              "Converting a larger data type to a smaller one.",
+              "Converting a value type to a reference type.",
+              "Converting a smaller data type to a larger one without data loss.",
+              "Converting a reference type to a value type."
+            ],
+            "answer": "Converting a smaller data type to a larger one without data loss.",
+            "citation": "After you know the details of the fundamental .NET Core data types, you will then examine a number of data type conversion techniques, including narrowing operations, widening operations, and the use of the checked and unchecked keywords."
+          },
+          {
+            "id": 288,
+            "question": "What are 'Razor Pages' in ASP.NET Core primarily used for?",
+            "options": [
+              "Building desktop applications.",
+              "Creating page-based web applications.",
+              "Developing console applications.",
+              "Managing background services."
+            ],
+            "answer": "Creating page-based web applications.",
+            "citation": "How to create page-based applications with Razor Pages"
+          },
+          {
+            "id": 289,
+            "question": "What is the 'Global Assembly Cache (GAC)' and why is it not used in .NET Core?",
+            "options": [
+              "A cloud storage service used for deployment; it's still used in .NET Core.",
+              "A common installation location for framework libraries in prior .NET Framework versions; .NET Core installs versions in separate locations.",
+              "A type of in-memory cache for web applications; it's still used.",
+              "A tool for debugging assemblies; it's not relevant to .NET Core."
+            ],
+            "answer": "A common installation location for framework libraries in prior .NET Framework versions; .NET Core installs versions in separate locations.",
+            "citation": "Prior versions of the .NET Framework used a common installation location for framework libraries known as the Global Assembly Cache (GAC). Instead of having a single installation location, .NET does not use the GAC. Instead, each version (including minor releases) is installed in its own location (by version) on the computer."
+          },
+          {
+            "id": 290,
+            "question": "Which of the following is an example of 'Language Integration' in the .NET platform?",
+            "options": [
+              "Defining a base class in C# and extending it in Visual Basic.",
+              "Writing all code in a single programming language.",
+              "Restricting code to only one operating system.",
+              "Using only predefined types from the base class library."
+            ],
+            "answer": "Defining a base class in C# and extending it in Visual Basic.",
+            "citation": "Language integration: .NET supports cross-language inheritance, cross-language exception handling, and cross-language debugging of code. For example, you can define a base class in C# and extend this type in Visual Basic."
+          },
+          {
+            "id": 291,
+            "question": "What is the primary characteristic of an 'immutable' record struct in C#?",
+            "options": [
+              "Its values can be changed after creation.",
+              "Its values cannot be changed after creation.",
+              "It can only contain public members.",
+              "It can only be used with value types."
+            ],
+            "answer": "Its values cannot be changed after creation.",
+            "citation": "The previous two record struct examples can be made immutable by adding the readonly keyword."
+          },
+          {
+            "id": 292,
+            "question": "How are framework libraries typically added into most .NET projects now, instead of using the GAC?",
+            "options": [
+              "Manually copying DLL files.",
+              "Using NuGet packages.",
+              "Directly referencing COM libraries for all projects.",
+              "Through system-wide environment variables."
+            ],
+            "answer": "Using NuGet packages.",
+            "citation": "Adding assemblies into most .NET projects is done by adding NuGet packages (covered later in this text)."
+          },
+          {
+            "id": 293,
+            "question": "What is the default value for an array of `int`s if you declare it but don't explicitly fill each index?",
+            "options": [
+              "`null`",
+              "`1`",
+              "`0`",
+              "`-1`"
+            ],
+            "answer": "`0`",
+            "citation": "Do be aware that if you declare an array but do not explicitly fill each index, each item will be set to the default value of the data type (e.g., an array of bools will be set to false or an array of ints will be set to 0)."
+          },
+          {
+            "id": 294,
+            "question": "In C#, what is the purpose of `System.Object.ToString()`?",
+            "options": [
+              "To convert an object to a numerical representation.",
+              "To return a string that represents the current object.",
+              "To compare two objects for equality.",
+              "To obtain the type of an object."
+            ],
+            "answer": "To return a string that represents the current object.",
+            "citation": "Console.WriteLine(rs.ToString());"
+          },
+          {
+            "id": 295,
+            "question": "What is a 'delegate' in C#?",
+            "options": [
+              "A type that encapsulates a method, allowing it to be passed as a parameter.",
+              "A special type of class that can only contain static methods.",
+              "A keyword used for asynchronous programming.",
+              "A mechanism for creating generic collections."
+            ],
+            "answer": "A type that encapsulates a method, allowing it to be passed as a parameter.",
+            "citation": "In the world of .NET, type is simply a general term used to refer to a member from the set {class, interface, structure, enumeration, delegate}."
+          },
+          {
+            "id": 296,
+            "question": "What was the previous framework through which cross-platform use of C# was supported before .NET Core?",
+            "options": [
+              "Apache Tomcat",
+              "Mono project",
+              "Node.js",
+              "Ruby on Rails"
+            ],
+            "answer": "Mono project",
+            "citation": "While cross-platform use of C# was supported prior to .NET Core, that was through various other frameworks such as the Mono project."
+          },
+          {
+            "id": 297,
+            "question": "What is the definition of 'encapsulation' in Object-Oriented Programming (OOP)?",
+            "options": [
+              "The ability of an object to take on many forms.",
+              "The process of creating new classes from existing ones.",
+              "The bundling of data (state) and methods (behavior) that operate on the data into a single unit or class, and restricting direct access to some of the object's components.",
+              "The ability to interact with external systems."
+            ],
+            "answer": "The bundling of data (state) and methods (behavior) that operate on the data into a single unit or class, and restricting direct access to some of the object's components.",
+            "citation": "Chapter 5 examined the first pillar of OOP: encapsulation. At that time, you learned how to build a single well-defined class type with constructors and various members (fields, properties, methods, constants, and read-only fields)."
+          },
+          {
+            "id": 298,
+            "question": "What is a 'read-only field' in C#?",
+            "options": [
+              "A field whose value can be changed at any time.",
+              "A field whose value can only be assigned during declaration or in the constructor.",
+              "A field that is accessible globally.",
+              "A field that is always `null`."
+            ],
+            "answer": "A field whose value can only be assigned during declaration or in the constructor.",
+            "citation": "Chapter 5 examined the first pillar of OOP: encapsulation. At that time, you learned how to build a single well-defined class type with constructors and various members (fields, properties, methods, constants, and read-only fields)."
+          },
+          {
+            "id": 299,
+            "question": "What are 'value types' and 'reference types' in C#?",
+            "options": [
+              "Value types are stored on the heap, reference types on the stack.",
+              "Value types hold their data directly, reference types hold a reference to data on the heap.",
+              "Value types are always mutable, reference types are immutable.",
+              "Value types only store numbers, reference types only store strings."
+            ],
+            "answer": "Value types hold their data directly, reference types hold a reference to data on the heap.",
+            "citation": "This chapter will discuss value types and reference types and the concepts of boxing and unboxing."
+          },
+          {
+            "id": 300,
+            "question": "What are 'properties' primarily used for in C# classes, as a better design practice for data access?",
+            "options": [
+              "To expose raw field data publicly.",
+              "To provide controlled access to private (or protected) field data.",
+              "To define static helper methods.",
+              "To declare events."
+            ],
+            "answer": "To provide controlled access to private (or protected) field data.",
+            "citation": "To preserve the integrity of your state data, it is a far better design to define data as private (or possibly protected) and allow controlled access to the data via properties (as shown later in this chapter)."
+          },
+          {
+            "id": 301,
+            "question": "What is the primary function of the `.csproj` file in a C# project?",
+            "options": [
+              "It contains the program's executable code.",
+              "It's an image file.",
+              "It is the project file that defines the project's properties, references, and files.",
+              "It stores temporary build artifacts."
+            ],
+            "answer": "It is the project file that defines the project's properties, references, and files.",
+            "citation": "To run your project without debugging, execute the following .NET CLI command in the same directory as the project file (SimpleCSharpConsoleApp.csproj): dotnet run"
+          },
+          {
+            "id": 302,
+            "question": "What is the term for a C# method that is declared in a parent class and can be redefined (overridden) in a derived class?",
+            "options": [
+              "Abstract method",
+              "Static method",
+              "Virtual method",
+              "Sealed method"
+            ],
+            "answer": "Virtual method",
+            "citation": "Parent types are able to define any number of virtual and/or abstract members to establish a polymorphic interface. Derived types override such members using the override keyword."
+          },
+          {
+            "id": 303,
+            "question": "What is the role of `System.Object` in the .NET base class libraries?",
+            "options": [
+              "It is the base class for all collections.",
+              "It is the cosmic parent class from which all other .NET types directly or indirectly derive.",
+              "It provides methods for file I/O operations.",
+              "It defines asynchronous programming patterns."
+            ],
+            "answer": "It is the cosmic parent class from which all other .NET types directly or indirectly derive.",
+            "citation": "The chapter will wrap up by examining the role of the ultimate parent class in the .NET base class libraries: System.Object."
+          },
+          {
+            "id": 304,
+            "question": "When declaring a C# array, what is its lower bound always set to?",
+            "options": [
+              "1",
+              "-1",
+              "0",
+              "The size of the array"
+            ],
+            "answer": "0",
+            "citation": "Also note that the lower bound of an array always begins at 0."
+          },
+          {
+            "id": 305,
+            "question": "What is the purpose of 'Routing' in ASP.NET Core?",
+            "options": [
+              "To manage client-side navigation.",
+              "To map incoming HTTP requests to specific handler methods or pages.",
+              "To define network topology.",
+              "To handle database transactions."
+            ],
+            "answer": "To map incoming HTTP requests to specific handler methods or pages.",
+            "citation": "Key ASP.NET Core concepts such as model-binding, validation, and routing"
+          },
+          {
+            "id": 306,
+            "question": "Which C# version introduced 'file-scoped namespaces' to reduce indentation and extra code?",
+            "options": [
+              "C# 7",
+              "C# 8",
+              "C# 9",
+              "C# 10"
+            ],
+            "answer": "C# 10",
+            "citation": "With file scoped namespaces, the following code achieves the same effect: namespace CalculatorExamples class Calculator() { ... }"
+          },
+          {
+            "id": 307,
+            "question": "What is the benefit of a 'comprehensive base class library' in the .NET platform?",
+            "options": [
+              "It limits the functionality of applications.",
+              "It provides thousands of predefined types for various application types.",
+              "It requires developers to write all code from scratch.",
+              "It only supports command-line applications."
+            ],
+            "answer": "It provides thousands of predefined types for various application types.",
+            "citation": "A comprehensive base class library: This library provides thousands of predefined types that allow you to build code libraries, simple terminal applications, graphical desktop applications, and enterprise-level websites."
+          },
+          {
+            "id": 308,
+            "question": "What was the version of .NET Core (up to 3.1) referred to as after the release of .NET 5?",
+            "options": [
+              ".NET Framework",
+              ".NET Standard",
+              "Just .NET",
+              ".NET Legacy"
+            ],
+            "answer": "Just .NET",
+            "citation": "Throughout this book, the term .NET refers to .NET Core (up to 3.1) and .NET 5/6"
+          },
+          {
+            "id": 309,
+            "question": "What is the purpose of the `Console.WriteLine()` method in C#?",
+            "options": [
+              "To read input from the console.",
+              "To write data to a file.",
+              "To output text or values to the console window.",
+              "To create a new console window."
+            ],
+            "answer": "To output text or values to the console window.",
+            "citation": "PrintState() is more or less a diagnostic function that will simply dump the current state of a given Car object to the command window."
+          },
+          {
+            "id": 310,
+            "question": "What mechanism allows you to build families of related classes by defining common functionality in a parent class that can be leveraged and altered by child classes?",
+            "options": [
+              "Delegation",
+              "Composition",
+              "Inheritance",
+              "Abstraction"
+            ],
+            "answer": "Inheritance",
+            "citation": "First, you will learn how to build families of related classes using inheritance. As you will see, this form of code reuse allows you to define common functionality in a parent class that can be leveraged, and possibly altered, by child classes."
+          },
+          {
+            "id": 311,
+            "question": "What is the type of relationship established between classes when using the 'is-a' model?",
+            "options": [
+              "A dependency where one class contains another.",
+              "A dependency where one class is a specialized version of another.",
+              "A dependency where classes are completely unrelated.",
+              "A dependency for data transfer only."
+            ],
+            "answer": "A dependency where one class is a specialized version of another.",
+            "citation": "When you establish \"is-a\" relationships between classes, you are building a dependency between two or more class types."
+          },
+          {
+            "id": 312,
+            "question": "What are 'record structs' primarily used for in C#?",
+            "options": [
+              "Creating mutable reference types.",
+              "Defining value types that provide value equality and concise syntax for data-centric types.",
+              "Building user interfaces.",
+              "Performing low-level memory operations."
+            ],
+            "answer": "Defining value types that provide value equality and concise syntax for data-centric types.",
+            "citation": "The previous two record struct examples can be made immutable by adding the readonly keyword."
+          },
+          {
+            "id": 313,
+            "question": "What does `System.Object.GetType()` return?",
+            "options": [
+              "The value of the object.",
+              "The unique hash code of the object.",
+              "The `System.Type` object that represents the exact runtime type of the current instance.",
+              "The memory address of the object."
+            ],
+            "answer": "The `System.Type` object that represents the exact runtime type of the current instance.",
+            "citation": "Each class in the .NET Framework inherits from System.Object and therefore has access to all the methods of System.Object, including GetType()."
+          },
+          {
+            "id": 314,
+            "question": "What type of data structures are discussed in Chapter 4 of the C# material?",
+            "options": [
+              "Linked lists",
+              "Trees",
+              "Arrays",
+              "Graphs"
+            ],
+            "answer": "Arrays",
+            "citation": "CHAPTER 4 CORE C# PROGRAMMING CONSTRUCTS, PART 2"
+          },
+          {
+            "id": 315,
+            "question": "What is the purpose of `using System;` at the beginning of a C# file?",
+            "options": [
+              "It declares a new system.",
+              "It includes the `System` namespace, allowing direct access to its types without fully qualifying them.",
+              "It defines a global variable.",
+              "It marks the file as a system file."
+            ],
+            "answer": "It includes the `System` namespace, allowing direct access to its types without fully qualifying them.",
+            "citation": "This chapter will examine the composition of an executable program's entry point: the Main() method as well as a new C# 9.0 feature, top-level statements. Next, you will investigate the fundamental C# data types (and their equivalent types in the System namespace) including an examination of the System. String and System.Text.StringBuilder classes."
+          },
+          {
+            "id": 316,
+            "question": "What is 'polymorphism' in OOP?",
+            "options": [
+              "The ability of an object to appear in only one form.",
+              "The ability of an object to take on many forms, often through inheritance and method overriding.",
+              "The hiding of implementation details.",
+              "The composition of objects from other objects."
+            ],
+            "answer": "The ability of an object to take on many forms, often through inheritance and method overriding.",
+            "citation": "This chapter will focus on the remaining two pillars of OOP: inheritance and polymorphism."
+          },
+          {
+            "id": 317,
+            "question": "What is the purpose of 'logging' in ASP.NET Core applications?",
+            "options": [
+              "To prevent unauthorized access.",
+              "To record events and diagnostic information about the application's execution.",
+              "To manage user authentication.",
+              "To process payment transactions."
+            ],
+            "answer": "To record events and diagnostic information about the application's execution.",
+            "citation": "How to use features such as dependency injection, configuration, and logging as your applications grow more complex"
+          },
+          {
+            "id": 318,
+            "question": "What is the purpose of the `base` keyword in C#?",
+            "options": [
+              "To access members of the current class.",
+              "To access members of the derived class.",
+              "To access members of the immediate base class.",
+              "To define a new interface."
+            ],
+            "answer": "To access members of the immediate base class.",
+            "citation": "This chapter will focus on the remaining two pillars of OOP: inheritance and polymorphism."
+          },
+          {
+            "id": 319,
+            "question": "What is the primary role of the `.NET Runtime`?",
+            "options": [
+              "To compile C# code into machine code.",
+              "To manage the execution of .NET applications.",
+              "To design user interfaces.",
+              "To store application data."
+            ],
+            "answer": "To manage the execution of .NET applications.",
+            "citation": "ASP.NET Core runs on .NET 7, which is the latest version of .NET Core—a high-performance, cross-platform, open-source runtime."
+          },
+          {
+            "id": 320,
+            "question": "What is 'value equality' in the context of record structs?",
+            "options": [
+              "Comparing objects based on their memory addresses.",
+              "Comparing objects based on the equality of their constituent values/properties, rather than reference equality.",
+              "Comparing objects based on their type only.",
+              "Comparing objects based on their creation time."
+            ],
+            "answer": "Comparing objects based on the equality of their constituent values/properties, rather than reference equality.",
+            "citation": "The previous two record struct examples can be made immutable by adding the readonly keyword."
+          }
+        
+    
+   
+  ]
